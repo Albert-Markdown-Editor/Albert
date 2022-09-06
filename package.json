@@ -18,7 +18,7 @@
     "build:dev": "yarn build:tailwind-config-viewer && yarn build:tailwind && yarn build:esbuild"
   },
   "devDependencies": {
-    "@babel/core": "^7.18.13",
+    "@babel/core": "^7.19.0",
     "@babel/eslint-parser": "^7.18.9",
     "@babel/preset-env": "^7.18.10",
     "bundlewatch": "^0.3.3",
