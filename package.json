@@ -20,7 +20,7 @@
   "devDependencies": {
     "@babel/core": "^7.18.13",
     "@babel/eslint-parser": "^7.18.9",
-    "@babel/preset-env": "^7.18.10",
+    "@babel/preset-env": "^7.19.0",
     "bundlewatch": "^0.3.3",
     "esbuild-plugin-babel": "^0.2.3",
     "eslint": "^8.23.0",
