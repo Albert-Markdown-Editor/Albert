@@ -1,0 +1,5 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+recipes_book:
+  name: My Recipes Book
+  description: This is the best book about recipes you have ever read

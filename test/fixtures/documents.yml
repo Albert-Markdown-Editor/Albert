@@ -4,8 +4,10 @@ cooking_pasta_post:
   name: Learn how to cook pasta
   description: This is a post about pasta
   status: 1
+  project: recipes_book
 
 cooking_pizza_post:
   name: Learn how to cook pizza
   description: This is a post about pizza
   status: 1
+  project: recipes_book
