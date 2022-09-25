@@ -1,4 +1,5 @@
 !!! HTML
 = render Layout::ApplicationLayoutComponent.new do |c|
   = c.head
-  = c.body
+  = c.body do
+    = yield
