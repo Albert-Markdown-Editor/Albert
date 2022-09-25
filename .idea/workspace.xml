@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="Update gemfile.lock">
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="Update NPM package">
+      <change beforePath="$PROJECT_DIR$/.idea/Albert-Template.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Albert-Template.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/editor/common/document_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/editor/common/document_component.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/editor/common/document_fragment_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/editor/common/document_fragment_component.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -228,13 +230,7 @@
       <workItem from="1662309020034" duration="4732000" />
       <workItem from="1662475262925" duration="3681000" />
       <workItem from="1662808239379" duration="21952000" />
-    </task>
-    <task id="LOCAL-00027" summary="Refactor job steps into commands">
-      <created>1661587394317</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1661587394317</updated>
+      <workItem from="1664096091976" duration="497000" />
     </task>
     <task id="LOCAL-00028" summary="Add linter job to CI">
       <created>1661587610146</created>
@@ -572,7 +568,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663517748161</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="Update NPM package">
+      <created>1663518086283</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1663518086283</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -590,7 +593,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Refactor job steps into commands" />
     <MESSAGE value="Add linter job to CI" />
     <MESSAGE value="Add dependabot" />
     <MESSAGE value="Add bundlewatch CI job" />
@@ -615,6 +617,7 @@
     <MESSAGE value="Add Tailwind Typography plugin" />
     <MESSAGE value="Add basic logic for document JS controlling" />
     <MESSAGE value="Update gemfile.lock" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update gemfile.lock" />
+    <MESSAGE value="Update NPM package" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update NPM package" />
   </component>
 </project>

@@ -19,6 +19,10 @@ module Editor
 
       private
 
+      def default_html_attributes
+        super.merge({ contenteditable: true })
+      end
+
       def default_css_classes
         "prose prose-slate mx-auto lg:prose-lg"
       end
