@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="Basic editor working">
-      <change afterPath="$PROJECT_DIR$/app/models/project.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/factories/projects.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/fixtures/projects.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Albert-Template.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Albert-Template.iml" afterDir="false" />
+    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="Add Project model and basic association between Project and Document">
+      <change afterPath="$PROJECT_DIR$/app/controllers/documents_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/documents/index.html.haml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/documents/show.html.haml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/document.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/document.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/documents.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/documents.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/concerns/document_setters.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/concerns/document_setters.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.haml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -247,14 +244,7 @@
       <workItem from="1662475262925" duration="3681000" />
       <workItem from="1662808239379" duration="21952000" />
       <workItem from="1664096091976" duration="497000" />
-      <workItem from="1664097931656" duration="1746000" />
-    </task>
-    <task id="LOCAL-00028" summary="Add linter job to CI">
-      <created>1661587610146</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1661587610146</updated>
+      <workItem from="1664097931656" duration="3652000" />
     </task>
     <task id="LOCAL-00029" summary="Add linter job to CI">
       <created>1661587670897</created>
@@ -592,7 +582,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663518086283</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="Add Project model and basic association between Project and Document">
+      <created>1664124475023</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1664124475024</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -610,7 +607,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add linter job to CI" />
     <MESSAGE value="Add dependabot" />
     <MESSAGE value="Add bundlewatch CI job" />
     <MESSAGE value="Update bundlewatch config" />
@@ -635,6 +631,7 @@
     <MESSAGE value="Add basic logic for document JS controlling" />
     <MESSAGE value="Update gemfile.lock" />
     <MESSAGE value="Update NPM package" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update NPM package" />
+    <MESSAGE value="Add Project model and basic association between Project and Document" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Project model and basic association between Project and Document" />
   </component>
 </project>
