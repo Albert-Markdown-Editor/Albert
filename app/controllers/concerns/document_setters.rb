@@ -8,6 +8,11 @@ module DocumentSetters
   end
 
   def set_document_with_slug
-    @document = Document.friendly.find(params[:id] || params[:document_id])
+    if params.has_key? :project_id
+      @document = Project.friendly.find(params[:project_id])
+                         .documents.friendly.find(params[:id] || params[:document_id])
+    else
+      @document = Document.friendly.find(params[:id] || params[:document_id])
+    end
   end
 end

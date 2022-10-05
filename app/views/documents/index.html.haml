@@ -1,4 +1,8 @@
 %h1= "#{@documents.count} Loaded:"
 %ul
   - @documents.each do |d|
-    %li= link_to d.name
+    %li
+      - if d.project_id.present?
+        = link_to "#{d.name} #{"(project #{d.project.name})"}", document_path(d.project, d)
+      - else
+        = link_to d.name, document_path(d)

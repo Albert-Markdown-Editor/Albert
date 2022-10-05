@@ -716,7 +716,7 @@ Style/SwapValues:
   Enabled: false
 
 Style/SymbolArray:
-  EnforcedStyle: brackets
+  EnforcedStyle: percent
 
 Style/TrailingBodyOnMethodDefinition:
   Enabled: false

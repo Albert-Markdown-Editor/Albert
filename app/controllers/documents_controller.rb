@@ -7,7 +7,7 @@ class DocumentsController < ApplicationController
 
   # GET /documents
   def index
-    @documents = Document.all
+    @documents = Document.friendly.includes(:project).all
   end
 
   # GET /documents/<document_name>

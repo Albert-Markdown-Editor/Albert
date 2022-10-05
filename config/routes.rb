@@ -3,10 +3,14 @@
 Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  # API ROUTES
+  # ----------
 
-  resources :documents, only: %w[index]
+  # UI ROUTES
+  # ---------
+  resources :projects, only: %i[index show] do
+    resources :documents, only: %i[index show]
+  end
 
   namespace :editor do
     resources :documents, only: [:show, :new]
