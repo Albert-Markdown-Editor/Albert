@@ -33,7 +33,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_25_163830) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "slug"
-    t.bigint "project_id", null: false
+    t.bigint "project_id"
     t.index ["id"], name: "index_documents_on_id"
     t.index ["name"], name: "index_documents_on_name"
     t.index ["project_id"], name: "index_documents_on_project_id"

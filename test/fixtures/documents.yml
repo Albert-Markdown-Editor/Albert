@@ -11,3 +11,8 @@ cooking_pizza_post:
   description: This is a post about pizza
   status: 1
   project: recipes_book
+
+my_opinion_about_elden_ring:
+  name: My opinion about Elden Ring
+  description: Let's review the latest game from FromSoftware
+  status: 1
