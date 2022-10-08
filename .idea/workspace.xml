@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="Progress">
-      <change afterPath="$PROJECT_DIR$/app/components/sample_component/sample_component.html.haml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/friendly_id_slug.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/models/project_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Albert-Template.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Albert-Template.iml" afterDir="false" />
+    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="Add slugs to Project">
+      <change afterPath="$PROJECT_DIR$/app/models/concerns/with_friendly_id.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/projects/index.html.haml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/projects/show.html.haml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/controllers/projects_controller_test.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/common/tailwind_component.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/tailwind_component.html.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/sample_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/sample_component.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/project.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/project.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/concerns/project_setters.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/concerns/project_setters.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/projects_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/projects_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20220925093245_create_friendly_id_slugs.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20220925093245_create_friendly_id_slugs.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20220925163044_create_projects.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20220925163044_create_projects.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20220925163528_add_project_to_document.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20220925163528_add_project_to_document.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/test_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_helper.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -256,14 +248,7 @@
       <workItem from="1664096091976" duration="497000" />
       <workItem from="1664097931656" duration="7901000" />
       <workItem from="1664907386051" duration="4634000" />
-      <workItem from="1665216161249" duration="6004000" />
-    </task>
-    <task id="LOCAL-00031" summary="Add linter job to CI">
-      <created>1661587941400</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1661587941400</updated>
+      <workItem from="1665216161249" duration="8806000" />
     </task>
     <task id="LOCAL-00032" summary="Add linter job to CI">
       <created>1661588111759</created>
@@ -601,7 +586,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664999081791</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="Add slugs to Project">
+      <created>1665222285603</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1665222285604</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -619,7 +611,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update bundlewatch config" />
     <MESSAGE value="Fix linter issues" />
     <MESSAGE value="Replace template project name" />
     <MESSAGE value="Add scripts for CI &amp; run CI pipeline with scripts" />
@@ -644,6 +635,7 @@
     <MESSAGE value="Add Project model and basic association between Project and Document" />
     <MESSAGE value="Basic routing for documents configured" />
     <MESSAGE value="Progress" />
-    <option name="LAST_COMMIT_MESSAGE" value="Progress" />
+    <MESSAGE value="Add slugs to Project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add slugs to Project" />
   </component>
 </project>

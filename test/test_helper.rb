@@ -9,6 +9,8 @@ require "rails/test_help"
 # ================
 #
 
+# Monkeypatches default +ActiveSupport::TestCase+ with additional
+# configuration  and helper methods you can use in your tests
 class ActiveSupport::TestCase
   # Run tests in parallel with specified workers
   parallelize(workers: :number_of_processors)
@@ -48,5 +50,15 @@ class ActiveSupport::TestCase
       model.update(update_changes_slug)
       assert_equal model.slug, new_slug
     end
+  end
+end
+
+class ActionDispatch::IntegrationTest
+  # Inspired on https://github.com/rails/rails-controller-testing
+  # Allows to check controller assignments during a request
+  def assigns(key = nil)
+    assigns = {}.with_indifferent_access
+    @controller.view_assigns.each { |k, v| assigns.regular_writer(k, v) }
+    key.nil? ? assigns : assigns[key]
   end
 end
