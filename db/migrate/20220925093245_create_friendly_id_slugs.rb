@@ -7,7 +7,8 @@ MIGRATION_CLASS =
 
 class CreateFriendlyIdSlugs < MIGRATION_CLASS
   def change
-    create_table :friendly_id_slugs do |t|
+    # Set +sluggable_type+ to +uuid+ to work with friendly id models whose +id+ is an +uuid+
+    create_table :friendly_id_slugs, id: :uuid do |t|
       t.string   :slug,           :null => false
       t.uuid     :sluggable_id,   :null => false
       t.string   :sluggable_type, :limit => 50
