@@ -6,7 +6,7 @@ executors:
     # Jobs will be run in a docker container
     docker:
       # Ruby + Node + Selenium environment (ideal for testing)
-      - image: cimg/ruby:3.1.2-browsers
+      - image: cimg/ruby:3.1.2-node
         # Reference: https://circleci.com/docs/language-ruby
         environment:
           PARALLEL_WORKERS: "1"

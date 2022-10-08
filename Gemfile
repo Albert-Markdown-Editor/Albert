@@ -97,7 +97,10 @@ group :development, :test do
 
   # Test Tools
   gem "factory_bot_rails"
+  # Mock data generation for factories
   gem "faker"
+  # Allows referencing fixtures associations by fixture name (instead of ID)
+  gem "fixture_dependencies"
 end
 
 group :development do

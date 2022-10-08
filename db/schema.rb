@@ -33,15 +33,15 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_25_163830) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "slug"
-    t.bigint "project_id"
+    t.uuid "project_id"
     t.index ["id"], name: "index_documents_on_id"
     t.index ["name"], name: "index_documents_on_name"
     t.index ["project_id"], name: "index_documents_on_project_id"
   end
 
-  create_table "friendly_id_slugs", force: :cascade do |t|
+  create_table "friendly_id_slugs", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
     t.string "slug", null: false
-    t.integer "sluggable_id", null: false
+    t.uuid "sluggable_id", null: false
     t.string "sluggable_type", limit: 50
     t.string "scope"
     t.datetime "created_at"
@@ -50,7 +50,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_25_163830) do
     t.index ["sluggable_type", "sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_type_and_sluggable_id"
   end
 
-  create_table "projects", force: :cascade do |t|
+  create_table "projects", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
     t.string "name", null: false
     t.string "description"
     t.datetime "created_at", null: false

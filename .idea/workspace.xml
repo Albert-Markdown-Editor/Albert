@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="Basic routing for documents configured">
-      <change afterPath="$PROJECT_DIR$/app/controllers/concerns/project_setters.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/projects_controller.rb" afterDir="false" />
+    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="Progress">
+      <change afterPath="$PROJECT_DIR$/app/components/sample_component/sample_component.html.haml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/friendly_id_slug.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/models/project_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Albert-Template.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Albert-Template.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.rubocop.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.rubocop.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/concerns/document_setters.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/concerns/document_setters.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/documents_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/documents_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/document.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/document.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/common/tailwind_component.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/tailwind_component.html.haml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/sample_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/sample_component.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/project.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/project.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/documents/index.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/documents/index.html.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/ci-audits" beforeDir="false" afterPath="$PROJECT_DIR$/bin/ci-audits" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/migrate/20220925093245_create_friendly_id_slugs.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20220925093245_create_friendly_id_slugs.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20220925163044_create_projects.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20220925163044_create_projects.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20220925163528_add_project_to_document.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20220925163528_add_project_to_document.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/documents.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/documents.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_helper.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,25 +81,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "js.linters.configure.manually.selectedeslint": "true",
-    "last_opened_file_path": "/Users/alberto-mac/Desktop/Projects/Albert/Albert/app/controllers/concerns",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.selected.package.eslint": "/Users/alberto-mac/Desktop/Projects/Albert/Albert-Template/node_modules/eslint",
-    "node.js.selected.package.standard": "",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/alberto-mac/Desktop/Projects/Albert/Albert-Template/node_modules/prettier",
-    "ruby.rails.projectView.checked": "true",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable",
-    "ts.external.directory.path": "/Applications/RubyMine.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/alberto-mac/Desktop/Projects/Albert/Albert/app/controllers/concerns&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;/Users/alberto-mac/Desktop/Projects/Albert/Albert-Template/node_modules/eslint&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/alberto-mac/Desktop/Projects/Albert/Albert-Template/node_modules/prettier&quot;,
+    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/RubyMine.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/controllers/concerns" />
@@ -253,14 +255,8 @@
       <workItem from="1662808239379" duration="21952000" />
       <workItem from="1664096091976" duration="497000" />
       <workItem from="1664097931656" duration="7901000" />
-      <workItem from="1664907386051" duration="1305000" />
-    </task>
-    <task id="LOCAL-00030" summary="Add linter job to CI">
-      <created>1661587784484</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1661587784484</updated>
+      <workItem from="1664907386051" duration="4634000" />
+      <workItem from="1665216161249" duration="6004000" />
     </task>
     <task id="LOCAL-00031" summary="Add linter job to CI">
       <created>1661587941400</created>
@@ -598,7 +594,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664126148517</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="Progress">
+      <created>1664999081791</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1664999081791</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -616,7 +619,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add bundlewatch CI job" />
     <MESSAGE value="Update bundlewatch config" />
     <MESSAGE value="Fix linter issues" />
     <MESSAGE value="Replace template project name" />
@@ -641,6 +643,7 @@
     <MESSAGE value="Update NPM package" />
     <MESSAGE value="Add Project model and basic association between Project and Document" />
     <MESSAGE value="Basic routing for documents configured" />
-    <option name="LAST_COMMIT_MESSAGE" value="Basic routing for documents configured" />
+    <MESSAGE value="Progress" />
+    <option name="LAST_COMMIT_MESSAGE" value="Progress" />
   </component>
 </project>
