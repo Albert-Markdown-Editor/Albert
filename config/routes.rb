@@ -8,10 +8,7 @@ Rails.application.routes.draw do
 
   # UI ROUTES
   # ---------
-  resources :projects,
-    path: "projects/:organization_name",
-    params: { organization_name: :personal },
-    only: %i[index show] do
+  resources :projects, only: %i[index show] do
     resources :documents, only: %i[index show]
   end
 
