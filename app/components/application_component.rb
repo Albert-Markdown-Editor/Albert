@@ -5,7 +5,7 @@ class ApplicationComponent < ViewComponent::Base
   # Unique component CSS class name
   class << self
     def component_class
-      self.name.split("::").map(&:underscore).join("-")
+      name.split("::").map(&:underscore).join("-")
     end
 
     # Default component HTML attributes
