@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="Add factories tests">
-      <change beforePath="$PROJECT_DIR$/test/controllers/projects_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/projects_controller_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/documents.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/documents.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_helper.rb" afterDir="false" />
+    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="Add missing end line to few files">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/concerns/with_friendly_id.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/concerns/with_friendly_id.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/project.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/project.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,14 +242,7 @@
       <workItem from="1664096091976" duration="497000" />
       <workItem from="1664097931656" duration="7901000" />
       <workItem from="1664907386051" duration="4634000" />
-      <workItem from="1665216161249" duration="16811000" />
-    </task>
-    <task id="LOCAL-00037" summary="Add dependabot">
-      <created>1661619140220</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1661619140220</updated>
+      <workItem from="1665216161249" duration="17870000" />
     </task>
     <task id="LOCAL-00038" summary="Add bundlewatch CI job">
       <created>1661620253010</created>
@@ -587,7 +580,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665327901954</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="Add missing end line to few files">
+      <created>1665328280168</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1665328280168</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -605,7 +605,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Create Document model" />
     <MESSAGE value="Added DocumentFragments model &amp; defined concern for STI subclasses preload" />
     <MESSAGE value="Added DocumentFragment fixtures" />
     <MESSAGE value="Added logic to convert DocumentFragment content to Markdown formatted text" />
@@ -630,6 +629,7 @@
     <MESSAGE value="Fix document fixtures and added test coverage for model" />
     <MESSAGE value="PR ready for submission" />
     <MESSAGE value="Add factories tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add factories tests" />
+    <MESSAGE value="Add missing end line to few files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add missing end line to few files" />
   </component>
 </project>

@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class Document < ApplicationRecord
-  include FriendlyId
+  include WithFriendlyId
 
   # Associations
   belongs_to :project, optional: true
@@ -14,8 +14,8 @@ class Document < ApplicationRecord
   validates :name, presence: true
   validates :status, presence: true
 
-  # URL Slugs
-  friendly_id :name, use: [:slugged]
+  # Friendly URL Slug Configuration
+  configure_slug(:name)
 
   def should_generate_new_friendly_id?
     name_changed? || super
