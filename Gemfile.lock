@@ -112,7 +112,6 @@ GEM
     faker (2.23.0)
       i18n (>= 1.8.11, < 2)
     ffi (1.15.5)
-    fixture_dependencies (1.11.0)
     friendly_id (5.4.2)
       activerecord (>= 4.0.0)
     globalid (1.0.0)
@@ -317,7 +316,6 @@ DEPENDENCIES
   debug
   factory_bot_rails
   faker
-  fixture_dependencies
   friendly_id (~> 5.4.0)
   haml
   jbuilder

@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class Document < ApplicationRecord
-  extend FriendlyId
+  include FriendlyId
 
   # Associations
   belongs_to :project, optional: true
@@ -15,5 +15,5 @@ class Document < ApplicationRecord
   validates :status, presence: true
 
   # URL Slugs
-  friendly_id :name, use: :slugged
+  friendly_id :name, use: [:slugged]
 end

@@ -3,16 +3,21 @@
 module DocumentSetters
   extend ActiveSupport::Concern
 
+  def set_documents
+    @projects = Document.all
+  end
+
   def set_document
-    @document = Document.find(params[:id] || params[:document_id])
+    @document = Document.find(document_param)
   end
 
   def set_document_with_slug
-    if params.has_key? :project_id
-      @document = Project.friendly.find(params[:project_id])
-                         .documents.friendly.find(params[:id] || params[:document_id])
-    else
-      @document = Document.friendly.find(params[:id] || params[:document_id])
-    end
+    @document = Document.friendly.find(document_param)
+  end
+
+  private
+
+  def document_param
+    params[:document_id] || params[:id]
   end
 end
