@@ -10,6 +10,6 @@ module WithFriendlyId
   include FriendlyId
 
   included do
-    friendly_id :name, use: [:slugged, :history]
+    friendly_id :name, use: %i[slugged history]
   end
 end

@@ -13,7 +13,7 @@ class Project < ApplicationRecord
   validates :name, presence: true
 
   # Friendly URL Slug Configuration
-  friendly_id :name, use: [:slugged, :history]
+  friendly_id :name, use: %i[slugged history]
 
   def should_generate_new_friendly_id?
     name_changed? || super
