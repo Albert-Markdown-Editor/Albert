@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="Fix document fixtures and added test coverage for model">
-      <change afterPath="$PROJECT_DIR$/test/models/factories_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/concerns/with_friendly_id.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/concerns/with_friendly_id.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/document.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/document.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/project.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/project.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/filter_parameter_logging.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/filter_parameter_logging.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/friendly_id.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/friendly_id.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/models/document_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/document_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/models/project_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/project_test.rb" afterDir="false" />
+    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="PR ready for submission">
+      <change beforePath="$PROJECT_DIR$/test/factories/document_fragment.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/factories/document_fragment.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/models/factories_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/factories_test.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,14 +241,7 @@
       <workItem from="1664096091976" duration="497000" />
       <workItem from="1664097931656" duration="7901000" />
       <workItem from="1664907386051" duration="4634000" />
-      <workItem from="1665216161249" duration="16089000" />
-    </task>
-    <task id="LOCAL-00035" summary="Add linter job to CI">
-      <created>1661588653260</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1661588653260</updated>
+      <workItem from="1665216161249" duration="16454000" />
     </task>
     <task id="LOCAL-00036" summary="Add dependabot">
       <created>1661589109027</created>
@@ -593,7 +579,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665302361384</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="PR ready for submission">
+      <created>1665327529545</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1665327529545</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -611,7 +604,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Change CI script permissions" />
     <MESSAGE value="Fix ci-pipeline" />
     <MESSAGE value="Create Document model" />
     <MESSAGE value="Added DocumentFragments model &amp; defined concern for STI subclasses preload" />
@@ -636,6 +628,7 @@
     <MESSAGE value="Basic index and show routes for projects ready" />
     <MESSAGE value="Project document basic routes are working" />
     <MESSAGE value="Fix document fixtures and added test coverage for model" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix document fixtures and added test coverage for model" />
+    <MESSAGE value="PR ready for submission" />
+    <option name="LAST_COMMIT_MESSAGE" value="PR ready for submission" />
   </component>
 </project>
