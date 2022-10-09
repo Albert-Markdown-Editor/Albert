@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   # UI ROUTES
   # ---------
   resources :projects, only: %i[index show] do
-    resources :documents, only: %i[index show]
+    resources :project_documents, path: "documents", as: "documents", only: %i[index show]
   end
 
   # LookBook Engine

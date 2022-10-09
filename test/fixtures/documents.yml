@@ -3,16 +3,16 @@
 cooking_pasta_post:
   name: Learn how to cook pasta
   description: This is a post about pasta
-  status: 1
+  status: 0
   project: recipes_book
 
 cooking_pizza_post:
   name: Learn how to cook pizza
   description: This is a post about pizza
-  status: 1
+  status: 0
   project: recipes_book
 
 my_opinion_about_elden_ring:
   name: My opinion about Elden Ring
   description: Let's review the latest game from FromSoftware
-  status: 1
+  status: 0

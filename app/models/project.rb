@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-# Projects are a composition of documents. They provide additional resources
-# to plan and coordinate the ellaboration of existing and new documents between
+# Projects are a composition of project_documents. They provide additional project_documents
+# to plan and coordinate the ellaboration of existing and new project_documents between
 # multiple users
 class Project < ApplicationRecord
   include FriendlyId
