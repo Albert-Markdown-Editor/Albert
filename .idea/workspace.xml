@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="Add missing end line to few files">
+    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="Refactored model Friendly ID logic into a concern">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/concerns/with_friendly_id.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/concerns/with_friendly_id.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/project.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/project.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/application_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/application_component.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/sample_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/sample_component.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/sample_component/sample_component.html.haml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,14 +243,7 @@
       <workItem from="1664096091976" duration="497000" />
       <workItem from="1664097931656" duration="7901000" />
       <workItem from="1664907386051" duration="4634000" />
-      <workItem from="1665216161249" duration="17870000" />
-    </task>
-    <task id="LOCAL-00038" summary="Add bundlewatch CI job">
-      <created>1661620253010</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1661620253010</updated>
+      <workItem from="1665216161249" duration="18502000" />
     </task>
     <task id="LOCAL-00039" summary="Add bundlewatch CI job">
       <created>1661621059950</created>
@@ -587,7 +581,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665328280168</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="Refactored model Friendly ID logic into a concern">
+      <created>1665329514280</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1665329514280</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -605,7 +606,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added DocumentFragments model &amp; defined concern for STI subclasses preload" />
     <MESSAGE value="Added DocumentFragment fixtures" />
     <MESSAGE value="Added logic to convert DocumentFragment content to Markdown formatted text" />
     <MESSAGE value="Added Markdown parser gems" />
@@ -630,6 +630,7 @@
     <MESSAGE value="PR ready for submission" />
     <MESSAGE value="Add factories tests" />
     <MESSAGE value="Add missing end line to few files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add missing end line to few files" />
+    <MESSAGE value="Refactored model Friendly ID logic into a concern" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored model Friendly ID logic into a concern" />
   </component>
 </project>
