@@ -1,6 +1,12 @@
 require "test_helper"
 
-class DocumentTest < ActiveSupport::TestCase
+class ProjectTest < ActiveSupport::TestCase
+  # Fixtures
+  # --------
+  test "Project fixtures are valid" do
+    assert projects.all?(&:valid?)
+  end
+
   # Model Slug Configuration
   # ------------------------
   test "A project uses its name as slug" do

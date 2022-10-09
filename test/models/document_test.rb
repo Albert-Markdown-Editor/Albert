@@ -1,6 +1,12 @@
 require "test_helper"
 
 class DocumentTest < ActiveSupport::TestCase
+  # Fixtures
+  # --------
+  test "Document fixtures are valid" do
+    assert documents.all?(&:valid?)
+  end
+
   # Model Slug Configuration
   # ------------------------
   test "A document uses its name as slug" do

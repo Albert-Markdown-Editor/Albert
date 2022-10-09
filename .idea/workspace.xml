@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="Project document basic routes are working">
+    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="Fix document fixtures and added test coverage for model">
+      <change afterPath="$PROJECT_DIR$/test/models/factories_test.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/factories/document.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/factories/document.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/concerns/with_friendly_id.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/concerns/with_friendly_id.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/document.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/document.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/project.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/project.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/filter_parameter_logging.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/filter_parameter_logging.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/friendly_id.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/friendly_id.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/models/document_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/document_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/models/project_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/project_test.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,14 +248,7 @@
       <workItem from="1664096091976" duration="497000" />
       <workItem from="1664097931656" duration="7901000" />
       <workItem from="1664907386051" duration="4634000" />
-      <workItem from="1665216161249" duration="15425000" />
-    </task>
-    <task id="LOCAL-00034" summary="Add linter job to CI">
-      <created>1661588570085</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1661588570085</updated>
+      <workItem from="1665216161249" duration="16089000" />
     </task>
     <task id="LOCAL-00035" summary="Add linter job to CI">
       <created>1661588653260</created>
@@ -587,7 +586,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665300170731</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="Fix document fixtures and added test coverage for model">
+      <created>1665302361384</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1665302361384</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -605,7 +611,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add scripts for CI &amp; run CI pipeline with scripts" />
     <MESSAGE value="Change CI script permissions" />
     <MESSAGE value="Fix ci-pipeline" />
     <MESSAGE value="Create Document model" />
@@ -630,6 +635,7 @@
     <MESSAGE value="Add slugs to Project" />
     <MESSAGE value="Basic index and show routes for projects ready" />
     <MESSAGE value="Project document basic routes are working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project document basic routes are working" />
+    <MESSAGE value="Fix document fixtures and added test coverage for model" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix document fixtures and added test coverage for model" />
   </component>
 </project>
