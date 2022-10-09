@@ -4,7 +4,7 @@
 # to plan and coordinate the ellaboration of existing and new project_documents between
 # multiple users
 class Project < ApplicationRecord
-  include FriendlyId
+  include WithFriendlyId
 
   # Associations
   has_many :documents, dependent: :delete_all
@@ -13,7 +13,7 @@ class Project < ApplicationRecord
   validates :name, presence: true
 
   # Friendly URL Slug Configuration
-  friendly_id :name, use: %i[slugged history]
+  configure_slug(:name, with_history: true)
 
   def should_generate_new_friendly_id?
     name_changed? || super

@@ -7,9 +7,22 @@
 #   This is important to know when working with +route-helpers+.
 module WithFriendlyId
   extend ActiveSupport::Concern
-  include FriendlyId
 
   included do
-    friendly_id :name, use: %i[slugged history]
+    include FriendlyId
+
+    def should_generate_new_friendly_id?
+      raise "
+        Model class #{self.class.name} does not define method 'should_generate_new_friendly_id?',
+        required by 'WithFriendlyId' concern. Define method returning true when any of the attributes
+        associated to the model slug generation changes in order to trigger slug update in model.
+      "
+    end
+  end
+
+  class_methods do
+    def configure_slug(attribute, with_history: false, with_scope: nil)
+      friendly_id(attribute, use: [:slugged, (:history if with_history)].compact)
+    end
   end
 end
