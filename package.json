@@ -20,7 +20,7 @@
   "devDependencies": {
     "@babel/core": "^7.19.3",
     "@babel/eslint-parser": "^7.19.1",
-    "@babel/preset-env": "^7.19.3",
+    "@babel/preset-env": "^7.19.4",
     "@tailwindcss/typography": "^0.5.7",
     "bundlewatch": "^0.3.3",
     "esbuild-plugin-babel": "^0.2.3",
