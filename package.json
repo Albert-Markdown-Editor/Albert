@@ -29,7 +29,7 @@
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-n": "^15.3.0",
-    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-promise": "^6.1.0",
     "postcss": "^8.4.17",
     "postcss-cli": "^10.0.0",
     "postcss-flexbugs-fixes": "^5.0.2",
