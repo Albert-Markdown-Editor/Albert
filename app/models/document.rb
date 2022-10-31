@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class Document < ApplicationRecord
+  extend Filterable
   include WithFriendlyId
 
   # Associations
