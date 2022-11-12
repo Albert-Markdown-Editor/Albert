@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="Add filter logic to models and controllers. Add test coverage.">
-      <change afterPath="$PROJECT_DIR$/app/components/projects/index_component.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/projects/index_component/filter_component.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/projects/index_component/project_component.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/projects/index_component/project_component/project_component.html.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
+    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="First implementation of the filter ready">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/application_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/application_component.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/projects/index.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/projects/index.html.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.rubocop.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.rubocop.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/projects/index_component/filter_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/projects/index_component/filter_component.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -252,14 +248,7 @@
       <workItem from="1667329073623" duration="950000" />
       <workItem from="1667849069626" duration="278000" />
       <workItem from="1667990866790" duration="1481000" />
-      <workItem from="1668239257043" duration="13042000" />
-    </task>
-    <task id="LOCAL-00041" summary="Update bundlewatch config">
-      <created>1661621998826</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1661621998826</updated>
+      <workItem from="1668239257043" duration="13925000" />
     </task>
     <task id="LOCAL-00042" summary="Update bundlewatch config">
       <created>1661622161424</created>
@@ -597,7 +586,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668279693509</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary="First implementation of the filter ready">
+      <created>1668282386316</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1668282386316</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -615,7 +611,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added Markdown parser gems" />
     <MESSAGE value="Added logic to parse markdown and markdown content to HTML" />
     <MESSAGE value="Set up new editor document controller and routes." />
     <MESSAGE value="Add preview for application component" />
@@ -640,6 +635,7 @@
     <MESSAGE value="Refactored model Friendly ID logic into a concern" />
     <MESSAGE value="Implemented model filter logic and basic filter proxy tests" />
     <MESSAGE value="Add filter logic to models and controllers. Add test coverage." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add filter logic to models and controllers. Add test coverage." />
+    <MESSAGE value="First implementation of the filter ready" />
+    <option name="LAST_COMMIT_MESSAGE" value="First implementation of the filter ready" />
   </component>
 </project>

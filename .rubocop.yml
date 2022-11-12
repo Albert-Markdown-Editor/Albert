@@ -431,6 +431,9 @@ Style/CommandLiteral:
 Style/CommentedKeyword:
   Enabled: false
 
+Style/ClassAndModuleChildren:
+  Enabled: false
+
 Style/DateTime:
   Enabled: true
 
@@ -462,7 +465,7 @@ Style/Encoding:
   Enabled: false
 
 Style/EndlessMethod:
-  Enabled: false
+  Enabled: true
 
 Style/EnvHome:
   Enabled: false
