@@ -11,10 +11,7 @@ class ApplicationComponent < ViewComponent::Base
     # Default component HTML attributes
     def default_html_attributes
       {
-        class: [
-          default_css_classes,
-          component_class,
-        ].join(" "),
+        class: [default_css_classes, component_class].join(" "),
         style: default_css_style,
       }
     end
