@@ -1,6 +1,6 @@
-require "test_helper"
+require "model_test_helper"
 
-class DocumentTest < ActiveSupport::TestCase
+class DocumentTest < ModelTestHelper
   # Fixtures
   # --------
   test "Document fixtures are valid" do

@@ -1,14 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="Refactored model Friendly ID logic into a concern">
-      <change afterPath="$PROJECT_DIR$/app/models/concerns/filter_scopeable.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/concerns/filterable.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/concerns/filters/document_filter_proxy.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/concerns/filters/filter_proxy.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/models/concerns/filters/filter_proxy_test.rb" afterDir="false" />
+    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="Implemented model filter logic and basic filter proxy tests">
+      <change afterPath="$PROJECT_DIR$/app/controllers/concerns/filterable_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/concerns/filterable_model.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/concerns/filters/project_filter_proxy.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/controller_test_helper.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/controllers/concerns/filterable_controller_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/model_test_helper.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/models/concerns/filters/document_filter_proxy_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/models/concerns/filters/project_filter_proxy_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Albert-Template.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Albert-Template.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/concerns/with_slug_routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/concerns/with_slug_routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/projects_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/projects_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/concerns/filterable.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/concerns/filters/document_filter_proxy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/concerns/filters/document_filter_proxy.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/concerns/filters/filter_proxy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/concerns/filters/filter_proxy.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/document.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/document.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/project.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/project.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/controllers/projects_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/projects_controller_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/models/concerns/filters/filter_proxy_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/concerns/filters/filter_proxy_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/models/document_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/document_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/models/project_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/project_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_helper.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,32 +86,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/alberto-mac/Desktop/Projects/Albert/Albert/test/controllers&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;/Users/alberto-mac/Desktop/Projects/Albert/Albert-Template/node_modules/eslint&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/alberto-mac/Desktop/Projects/Albert/Albert-Template/node_modules/prettier&quot;,
-    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Applications/RubyMine.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "js.linters.configure.manually.selectedeslint": "true",
+    "last_opened_file_path": "/Users/alberto-mac/Desktop/Projects/Albert/Albert/test",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.selected.package.eslint": "/Users/alberto-mac/Desktop/Projects/Albert/Albert-Template/node_modules/eslint",
+    "node.js.selected.package.standard": "",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/alberto-mac/Desktop/Projects/Albert/Albert-Template/node_modules/prettier",
+    "ruby.rails.projectView.checked": "true",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable",
+    "ts.external.directory.path": "/Applications/RubyMine.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test" />
+      <recent name="$PROJECT_DIR$/test/models/concerns/filters" />
+      <recent name="$PROJECT_DIR$/app/models/concerns/filters" />
       <recent name="$PROJECT_DIR$/test/controllers" />
       <recent name="$PROJECT_DIR$/app/controllers/concerns" />
-      <recent name="$PROJECT_DIR$/app/controllers" />
-      <recent name="$PROJECT_DIR$/test/factories" />
-      <recent name="$PROJECT_DIR$/test/fixtures" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/test/models/concerns/filters" />
@@ -247,13 +262,10 @@
       <workItem from="1664097931656" duration="7901000" />
       <workItem from="1664907386051" duration="4634000" />
       <workItem from="1665216161249" duration="18502000" />
-    </task>
-    <task id="LOCAL-00039" summary="Add bundlewatch CI job">
-      <created>1661621059950</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1661621059950</updated>
+      <workItem from="1667329073623" duration="950000" />
+      <workItem from="1667849069626" duration="278000" />
+      <workItem from="1667990866790" duration="1481000" />
+      <workItem from="1668239257043" duration="10498000" />
     </task>
     <task id="LOCAL-00040" summary="Update bundlewatch config">
       <created>1661621578227</created>
@@ -591,7 +603,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665329514280</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="Implemented model filter logic and basic filter proxy tests">
+      <created>1667234175845</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1667234175845</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -609,7 +628,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added DocumentFragment fixtures" />
     <MESSAGE value="Added logic to convert DocumentFragment content to Markdown formatted text" />
     <MESSAGE value="Added Markdown parser gems" />
     <MESSAGE value="Added logic to parse markdown and markdown content to HTML" />
@@ -634,6 +652,7 @@
     <MESSAGE value="Add factories tests" />
     <MESSAGE value="Add missing end line to few files" />
     <MESSAGE value="Refactored model Friendly ID logic into a concern" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored model Friendly ID logic into a concern" />
+    <MESSAGE value="Implemented model filter logic and basic filter proxy tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented model filter logic and basic filter proxy tests" />
   </component>
 </project>

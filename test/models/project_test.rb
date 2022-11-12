@@ -1,6 +1,6 @@
-require "test_helper"
+require "model_test_helper"
 
-class ProjectTest < ActiveSupport::TestCase
+class ProjectTest < ModelTestHelper
   # Fixtures
   # --------
   test "Project fixtures are valid" do

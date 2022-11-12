@@ -9,5 +9,9 @@ module Filters
   end
 
   class DocumentFilterProxy < FilterProxy
+    class << self
+      def query_scope = Document
+      def filter_scopes_module = DocumentFilterScopes
+    end
   end
 end

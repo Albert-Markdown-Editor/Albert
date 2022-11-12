@@ -13,10 +13,12 @@ module WithSlugRoutes
     )
   end
 
+  # Redirects to slugged URL
   def redirect_to_url_with_active_slug
     redirect_to(slug_resource, status: :moved_permanently)
   end
 
+  # Checks whether current URL matches with URL with slug parameter
   def request_with_deprecated_slug?
     request.url != url_for(slug_resource)
   end
