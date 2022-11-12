@@ -243,14 +243,7 @@
       <workItem from="1667329073623" duration="950000" />
       <workItem from="1667849069626" duration="278000" />
       <workItem from="1667990866790" duration="1481000" />
-      <workItem from="1668239257043" duration="14251000" />
-    </task>
-    <task id="LOCAL-00045" summary="Update bundlewatch config">
-      <created>1661673633358</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1661673633358</updated>
+      <workItem from="1668239257043" duration="14290000" />
     </task>
     <task id="LOCAL-00046" summary="Update bundlewatch config">
       <created>1661674001887</created>
@@ -588,7 +581,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668283384541</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="Fixed linter issues and dependencies vulnerabilities">
+      <created>1668283452933</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1668283452934</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
