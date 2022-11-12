@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="First implementation of the filter ready">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.rubocop.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.rubocop.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/projects/index_component/filter_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/projects/index_component/filter_component.rb" afterDir="false" />
+    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="Fixed linter issues and dependencies vulnerabilities">
+      <change beforePath="$PROJECT_DIR$/.idea/Albert-Template.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Albert-Template.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +80,7 @@
     "prettierjs.PrettierConfiguration.Package": "/Users/alberto-mac/Desktop/Projects/Albert/Albert-Template/node_modules/prettier",
     "ruby.rails.projectView.checked": "true",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable",
+    "settings.editor.selected.configurable": "application.passwordSafe",
     "ts.external.directory.path": "/Applications/RubyMine.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external"
   }
 }]]></component>
@@ -248,14 +244,7 @@
       <workItem from="1667329073623" duration="950000" />
       <workItem from="1667849069626" duration="278000" />
       <workItem from="1667990866790" duration="1481000" />
-      <workItem from="1668239257043" duration="13925000" />
-    </task>
-    <task id="LOCAL-00042" summary="Update bundlewatch config">
-      <created>1661622161424</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1661622161424</updated>
+      <workItem from="1668239257043" duration="14152000" />
     </task>
     <task id="LOCAL-00043" summary="Update bundlewatch config">
       <created>1661622442699</created>
@@ -593,7 +582,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668282386316</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="Fixed linter issues and dependencies vulnerabilities">
+      <created>1668283085905</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1668283085905</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -611,7 +607,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added logic to parse markdown and markdown content to HTML" />
     <MESSAGE value="Set up new editor document controller and routes." />
     <MESSAGE value="Add preview for application component" />
     <MESSAGE value="Add translations to layout" />
@@ -636,6 +631,7 @@
     <MESSAGE value="Implemented model filter logic and basic filter proxy tests" />
     <MESSAGE value="Add filter logic to models and controllers. Add test coverage." />
     <MESSAGE value="First implementation of the filter ready" />
-    <option name="LAST_COMMIT_MESSAGE" value="First implementation of the filter ready" />
+    <MESSAGE value="Fixed linter issues and dependencies vulnerabilities" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed linter issues and dependencies vulnerabilities" />
   </component>
 </project>
