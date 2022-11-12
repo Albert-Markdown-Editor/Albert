@@ -4,7 +4,12 @@
 # to plan and coordinate the ellaboration of existing and new project_documents between
 # multiple users
 class Project < ApplicationRecord
+  extend FilterableModel
   include WithFriendlyId
+
+  class << self
+    def filter_proxy = Filters::ProjectFilterProxy
+  end
 
   # Associations
   has_many :documents, dependent: :delete_all

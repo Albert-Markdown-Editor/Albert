@@ -1,23 +1,47 @@
-require "test_helper"
+require "controller_test_helper"
 
-class ProjectsControllerTest < ActionDispatch::IntegrationTest
+class ProjectsControllerTest < ControllerTestHelper
+  test "GET index renders projects page" do
+    get projects_path
+
+    assert_response :success
+  end
+
   test "GET index returns all projects" do
     get projects_path
 
     result = assigns(:projects)
 
-    assert_response :success
     assert_equal result.pluck(:id).sort, Project.pluck(:id).sort
   end
 
-  test "GET show returns a project" do
+  test "GET index filters projects" do
+    filter_params = { name: projects(:recipes_book).name }
+
+    filtered_projects = Project.filter_by(filter_params)
+
+    get projects_path
+
+    result = assigns(:projects)
+
+    assert_equal result.pluck(:id).sort, filtered_projects.pluck(:id).sort
+  end
+
+  test "GET show renders project" do
+    project = projects(:recipes_book)
+
+    get project_path(project)
+
+    assert_response :success
+  end
+
+  test "GET show assigns specified project" do
     project = projects(:recipes_book)
 
     get project_path(project)
 
     result = assigns(:project)
 
-    assert_response :success
     assert_equal result.id, project.id
   end
 

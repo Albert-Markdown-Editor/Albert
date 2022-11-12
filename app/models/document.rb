@@ -1,8 +1,12 @@
 # frozen_string_literal: true
 
 class Document < ApplicationRecord
-  extend Filterable
+  extend FilterableModel
   include WithFriendlyId
+
+  class << self
+    def filter_proxy = Filters::DocumentFilterProxy
+  end
 
   # Associations
   belongs_to :project, optional: true
