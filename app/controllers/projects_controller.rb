@@ -10,7 +10,7 @@ class ProjectsController < ApplicationController
 
   # GET /projects
   def index
-    filter(@projects)
+    @projects = filter(@projects)
   end
 
   # GET /projects/<project_name>
