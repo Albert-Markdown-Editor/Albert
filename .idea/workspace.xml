@@ -16,6 +16,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
@@ -78,7 +79,7 @@
     "prettierjs.PrettierConfiguration.Package": "/Users/alberto-mac/Desktop/Projects/Albert/Albert-Template/node_modules/prettier",
     "ruby.rails.projectView.checked": "true",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "application.passwordSafe",
+    "settings.editor.selected.configurable": "vcs.Git",
     "ts.external.directory.path": "/Applications/RubyMine.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external"
   }
 }]]></component>
@@ -242,14 +243,7 @@
       <workItem from="1667329073623" duration="950000" />
       <workItem from="1667849069626" duration="278000" />
       <workItem from="1667990866790" duration="1481000" />
-      <workItem from="1668239257043" duration="14182000" />
-    </task>
-    <task id="LOCAL-00044" summary="Update bundlewatch config">
-      <created>1661673488990</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1661673488990</updated>
+      <workItem from="1668239257043" duration="14251000" />
     </task>
     <task id="LOCAL-00045" summary="Update bundlewatch config">
       <created>1661673633358</created>
@@ -587,7 +581,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668283355184</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="Fixed linter issues and dependencies vulnerabilities">
+      <created>1668283384541</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1668283384541</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
