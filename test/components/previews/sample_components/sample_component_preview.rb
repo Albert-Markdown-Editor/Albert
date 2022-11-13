@@ -1,9 +1,9 @@
 # @label Sample Component
-class SampleComponentPreview < ViewComponent::Preview
+class SampleComponents::SampleComponentPreview < ViewComponent::Preview
   # Application Component
   # ---------------------
   # Abstract component to be inherited by the rest of components in project.
   def default
-    render SampleComponent.new
+    render SampleComponents::SampleComponent.new
   end
 end
