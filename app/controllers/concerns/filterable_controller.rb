@@ -11,7 +11,7 @@ module FilterableController
       "
     end
 
-    scope.filter_by(filters)
+    scope.filter_by(**filters)
   end
 
   def filter_params

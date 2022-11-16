@@ -37,7 +37,7 @@ class ApplicationComponent < ViewComponent::Base
 
     custom_attrs.each_key do |k|
       if custom_attrs[k].is_a? String
-        previous_attrs[k] = [previous_attrs.fetch(k, ""), custom_attrs[k]].join(" ")
+        previous_attrs[k] = [previous_attrs.fetch(k, ""), custom_attrs[k]].select { |attr| !attr.blank? }.join(" ")
       elsif custom_attrs[k].is_a? Hash
         previous_attrs[k] = concat_html_attributes(custom_attrs[k], previous_attrs.fetch(k, {}))
       else

@@ -6,7 +6,7 @@ import controllers from './**/*_controller.js'
 
 // Component Controllers
 // ---------------------
-import componentControllers from './../../components/**/*_controller.js'
+import componentControllers from './../components/**/*_controller.js'
 
 // Auxiliary Methods
 // -----------------

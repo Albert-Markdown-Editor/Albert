@@ -5,9 +5,9 @@ class FilterProxyTest < ActiveSupport::TestCase
   end
 
   def setup
-    @proxy ||= "Filters::DocumentFilterProxy".constantize
+    @proxy ||= ::Filters::DocumentFilterProxy
     @proxy_model_class = Document
-    @proxy_scopes_module = "Filters::DocumentFilterScopes".constantize
+    @proxy_scopes_module = ::Filters::DocumentFilterScopes
     @proxy_scope = @proxy_model_class.extending(@proxy_scopes_module)
   end
 

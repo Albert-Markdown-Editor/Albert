@@ -12,7 +12,7 @@ module Filters
         raise "Class #{name} does not define filter_scopes_module class method."
       end
 
-      def filter_by(filters = {})
+      def filter_by(**filters)
         extended_scope = query_scope.extending(filter_scopes_module)
 
         filters.each do |filter_scope, filter_value|
