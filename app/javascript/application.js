@@ -11,19 +11,32 @@ import componentControllers from './../components/**/*_controller.js'
 
 // Auxiliary Methods
 // -----------------
+function commonComponentName(defaultName) {
+  const namespaces = [
+    ...new Set(
+      defaultName.split('--').filter((ns) => !['controllers'].includes(ns))
+    )
+  ]
+  return namespaces.join('-')
+}
+
 function componentControllerName(defaultName) {
   const namespaces = [
     ...new Set(
       defaultName.split('--').filter((ns) => !['..', 'components'].includes(ns))
     )
   ]
+  console.log(namespaces.join('-'))
   return namespaces.join('-')
 }
 
 const application = Application.start()
 
 controllers.forEach((controller) => {
-  application.register(controller.name, controller.module.default)
+  application.register(
+    commonComponentName(controller.name),
+    controller.module.default
+  )
 })
 
 componentControllers.forEach((controller) => {
@@ -33,6 +46,7 @@ componentControllers.forEach((controller) => {
   )
 })
 
-// Configure Stimulus development experience
-application.debug = false
+// Prints Stimulus information on console (controllers loaded, ...)
+application.debug = true
+
 window.Stimulus = application

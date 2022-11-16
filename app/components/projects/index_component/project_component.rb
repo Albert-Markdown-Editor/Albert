@@ -6,9 +6,9 @@ module Projects
 
     with_collection_parameter :project
 
-    def initialize(project:, html_attributes: {})
+    def initialize(project:, custom_html_attributes: {})
       @project = project
-      super(html_attributes:)
+      super(custom_html_attributes:)
     end
   end
 end

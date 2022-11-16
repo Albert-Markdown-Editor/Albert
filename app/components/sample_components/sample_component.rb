@@ -15,7 +15,7 @@ class SampleComponents::SampleComponent < ApplicationComponent
   def component_html_attributes
     {
       class: "px-8 py-6 rounded border",
-      "data-controller": "sample-component"
+      "data-controller": "..--components--sample-components--sample-component"
     }
   end
 end

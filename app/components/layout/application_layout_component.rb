@@ -26,14 +26,14 @@ module Layout
 
       attr_reader :title, :meta_tags
 
-      def initialize(title: nil, meta_tags: {}, html_attributes: {})
+      def initialize(title: nil, meta_tags: {}, custom_html_attributes: {})
         @title = title || DEFAULT_TITLE
         @meta_tags = META_CONFIG.merge(meta_tags)
-        super(html_attributes:)
+        super(custom_html_attributes:)
       end
 
       def call
-        tag.head(**wrapper_attributes) do
+        tag.head(**html_attributes) do
           # Application title displayed in web-browser tab
           concat(tag.title(title))
 
@@ -58,7 +58,7 @@ module Layout
     # +<body>+ layout content
     class Body < ApplicationComponent
       def call
-        content_tag(:body, content, wrapper_attributes)
+        content_tag(:body, content, html_attributes)
       end
     end
 
@@ -66,7 +66,7 @@ module Layout
     renders_one :body, Body
 
     def call
-      tag.html(**wrapper_attributes) do
+      tag.html(**html_attributes) do
         concat(head? ? head : render(Head.new))
         concat(body? ? body : render(Body.new))
       end
