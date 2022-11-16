@@ -16,6 +16,7 @@ module Albert
     # ViewComponent Configuration
     # ===========================
     # Set up preview layout
+    config.view_component.preview_controller = "PreviewController"
     config.view_component.default_preview_layout = "preview_layout"
 
     # Configuration for the application, engines, and railties goes here.

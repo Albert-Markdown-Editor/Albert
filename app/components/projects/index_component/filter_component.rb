@@ -12,7 +12,7 @@ module Projects
             concat(
               form.text_field(
                 :name,
-                value: filter_params[:name],
+                value: filter_param(:name),
                 class: "border-b-2 focus:border-slate-400 focus:outline-none"
               )
             )
@@ -24,7 +24,7 @@ module Projects
             concat(
               form.text_field(
                 :description,
-                value: filter_params[:description],
+                value: filter_param(:description),
                 class: "border-b-2 focus:border-slate-400 focus:outline-none"
               )
             )
@@ -34,6 +34,12 @@ module Projects
           form.submit
         )
       end
+    end
+
+    private
+
+    def filter_param(name)
+      (filter_params.blank? ? params : filter_params).fetch(name, "")
     end
   end
 end
