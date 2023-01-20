@@ -31,6 +31,14 @@ module ProjectSetters
     @document = Project.friendly.find(project_param).documents.friendly.find(document_param)
   end
 
+  def set_projects_deliverables
+    @deliverables = Project.find(project_param).deliverables
+  end
+
+  def set_project_deliverables_with_slug
+    @deliverables = Project.friendly.find(project_param).deliverables
+  end
+
   private
 
   def project_param

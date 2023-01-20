@@ -10,10 +10,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_09_25_163830) do
+ActiveRecord::Schema[7.0].define(version: 2023_01_20_072324) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pgcrypto"
   enable_extension "plpgsql"
+
+  create_table "blog_posts", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
+    t.string "name"
+    t.string "summary"
+    t.date "release_date"
+    t.uuid "project_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["project_id"], name: "index_blog_posts_on_project_id"
+  end
+
+  create_table "books", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
+    t.string "name"
+    t.string "summary"
+    t.date "release_date"
+    t.uuid "project_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["project_id"], name: "index_books_on_project_id"
+  end
 
   create_table "document_fragments", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
     t.string "type", null: false
@@ -61,6 +81,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_25_163830) do
     t.index ["slug"], name: "index_projects_on_slug", unique: true
   end
 
+  add_foreign_key "blog_posts", "projects"
+  add_foreign_key "books", "projects"
   add_foreign_key "document_fragments", "documents"
   add_foreign_key "documents", "projects"
 end

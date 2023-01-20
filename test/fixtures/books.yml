@@ -1,0 +1,6 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+book_without_project_1:
+  name: How to scam people with bitcoins
+  summary: Learn how to be the best person in the world tricking people on giving away their life savings
+  release_date: <%= rand(10..360).days.from_now %>

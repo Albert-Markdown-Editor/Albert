@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   # UI ROUTES
   # ---------
   resources :projects, only: %i[index show] do
+    resources :project_deliverables, path: "deliverables", as: "deliverables", only: %i[index]
     resources :project_documents, path: "documents", as: "documents", only: %i[index show]
   end
 
