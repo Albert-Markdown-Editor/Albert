@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="Fixed linter issues and dependencies vulnerabilities">
-      <change afterPath="$PROJECT_DIR$/app/controllers/project_deliverables_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/fixtures/blog_posts.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/fixtures/books.yml" afterDir="false" />
+    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="progress: added book &amp; post model, and deliverables controller">
+      <change afterPath="$PROJECT_DIR$/app/components/project_deliverables/index_component.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/project_deliverables/index_component/deliverable_component.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/project_deliverables/index.html.haml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/concerns/project_setters.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/concerns/project_setters.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/project_documents_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/project_documents_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/project.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/project.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +61,13 @@
       </RecentBranches>
     </option>
   </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -84,7 +86,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "js.linters.configure.manually.selectedeslint": "true",
-    "last_opened_file_path": "/Users/alberto-mac/Desktop/Projects/Albert/Albert/app/controllers",
+    "last_opened_file_path": "/Users/alberto-mac/Desktop/Projects/Albert/Albert/app/components",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.selected.package.eslint": "/Users/alberto-mac/Desktop/Projects/Albert/Albert-Template/node_modules/eslint",
@@ -99,11 +101,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/components" />
+      <recent name="$PROJECT_DIR$/app/views" />
       <recent name="$PROJECT_DIR$/app/controllers" />
       <recent name="$PROJECT_DIR$/test/fixtures" />
       <recent name="$PROJECT_DIR$/app/components/projects/index_component" />
-      <recent name="$PROJECT_DIR$/test" />
-      <recent name="$PROJECT_DIR$/test/models/concerns/filters" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/test/models/concerns/filters" />
@@ -258,13 +260,6 @@
       <workItem from="1667849069626" duration="278000" />
       <workItem from="1667990866790" duration="1481000" />
       <workItem from="1668239257043" duration="14290000" />
-    </task>
-    <task id="LOCAL-00046" summary="Update bundlewatch config">
-      <created>1661674001887</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1661674001887</updated>
     </task>
     <task id="LOCAL-00047" summary="Fix linter issues">
       <created>1661675209551</created>
@@ -602,7 +597,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668283452934</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="progress: added book &amp; post model, and deliverables controller">
+      <created>1674201503905</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1674201503906</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -620,7 +622,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Set up new editor document controller and routes." />
     <MESSAGE value="Add preview for application component" />
     <MESSAGE value="Add translations to layout" />
     <MESSAGE value="Add components, layout and previews for document editor" />
@@ -645,6 +646,10 @@
     <MESSAGE value="Add filter logic to models and controllers. Add test coverage." />
     <MESSAGE value="First implementation of the filter ready" />
     <MESSAGE value="Fixed linter issues and dependencies vulnerabilities" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed linter issues and dependencies vulnerabilities" />
+    <MESSAGE value="progress: added book &amp; post model, and deliverables controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="progress: added book &amp; post model, and deliverables controller" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Albert@Development__Albert_Template.rcov" NAME="Development: Albert-Template Coverage Results" MODIFIED="1674201895547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Albert-Template" />
   </component>
 </project>
