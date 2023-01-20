@@ -13,6 +13,8 @@ class Project < ApplicationRecord
 
   # Associations
   has_many :documents, dependent: :delete_all
+  has_many :blog_posts, dependent: :nullify
+  has_many :books, dependent: :nullify
 
   # Validations
   validates :name, presence: true
