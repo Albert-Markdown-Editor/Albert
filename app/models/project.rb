@@ -12,6 +12,7 @@ class Project < ApplicationRecord
   end
 
   # Associations
+  has_many :deliverables, class_name: "ProjectDeliverable"
   has_many :documents, dependent: :delete_all
   has_many :blog_posts, dependent: :nullify
   has_many :books, dependent: :nullify
