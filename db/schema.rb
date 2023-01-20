@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_01_20_072324) do
+ActiveRecord::Schema[7.0].define(version: 2023_01_20_083452) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pgcrypto"
   enable_extension "plpgsql"
@@ -85,4 +85,20 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_20_072324) do
   add_foreign_key "books", "projects"
   add_foreign_key "document_fragments", "documents"
   add_foreign_key "documents", "projects"
+
+  create_view "project_deliverables", sql_definition: <<-SQL
+      SELECT
+          CASE
+              WHEN (books.id IS NOT NULL) THEN 'Book'::text
+              WHEN (blog_posts.id IS NOT NULL) THEN 'BlogPost'::text
+              ELSE NULL::text
+          END AS kind,
+      COALESCE(books.id, blog_posts.id) AS id,
+      COALESCE(books.name, blog_posts.name) AS name,
+      COALESCE(books.summary, blog_posts.summary) AS summary,
+      COALESCE(books.release_date, blog_posts.release_date) AS release_date,
+      COALESCE(books.project_id, blog_posts.project_id) AS project_id
+     FROM (books
+       FULL JOIN blog_posts USING (id, name, summary, release_date, project_id, created_at, updated_at));
+  SQL
 end
