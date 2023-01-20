@@ -1,6 +1,7 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-blog_post_without_project_1:
-  name: How I became successful selling bitcoin master classes
-  summary: Learn how I got so successful and such a despicable person
+recipes_book_project_blog_post_1:
+  name: "Introducting my new book: How to cook pizza without burning your kitchen"
+  summary: Promo post to announce my new awesome book
   release_date: <%= rand(10..360).days.from_now %>
+  project: recipes_book
