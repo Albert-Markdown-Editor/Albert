@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="chore: rename name to title for BlogPost &amp; Book">
+    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="progress: test coverage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/concerns/view_based_model.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/concerns/view_based_model.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/project_deliverable.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/project_deliverable.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/models/project_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/project_test.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -259,13 +259,6 @@
       <workItem from="1667849069626" duration="278000" />
       <workItem from="1667990866790" duration="1481000" />
       <workItem from="1668239257043" duration="14290000" />
-    </task>
-    <task id="LOCAL-00051" summary="Change CI script permissions">
-      <created>1662283590286</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1662283590286</updated>
     </task>
     <task id="LOCAL-00052" summary="Fix ci-pipeline">
       <created>1662283914072</created>
@@ -603,7 +596,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674247041625</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="progress: test coverage">
+      <created>1674248170046</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1674248170046</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -621,7 +621,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fix style import with TailwindCSS" />
     <MESSAGE value="Add Tailwind Typography plugin" />
     <MESSAGE value="Add basic logic for document JS controlling" />
     <MESSAGE value="Update gemfile.lock" />
@@ -646,7 +645,8 @@
     <MESSAGE value="progress: adjust fixtures" />
     <MESSAGE value="progress: project deliverables view" />
     <MESSAGE value="chore: rename name to title for BlogPost &amp; Book" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: rename name to title for BlogPost &amp; Book" />
+    <MESSAGE value="progress: test coverage" />
+    <option name="LAST_COMMIT_MESSAGE" value="progress: test coverage" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Albert@Development__Albert_Template.rcov" NAME="Development: Albert-Template Coverage Results" MODIFIED="1674201895547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Albert-Template" />
