@@ -1,6 +1,19 @@
 require "model_test_helper"
 
 class ProjectTest < ModelTestHelper
+  def setup
+    @sample_project = projects(:recipes_book)
+  end
+
+  test ".deliverables return all project deliverables" do
+    project_kinds = ProjectDeliverable.kinds.keys.map(&:underscore).map(&:pluralize)
+    project_deliverables = project_kinds.map { |k| @sample_project.send(k) }.flatten.map { |d| d.id }.sort
+
+    result = @sample_project.deliverables.pluck(:id).sort
+
+    assert_equal project_deliverables, result
+  end
+
   # Fixtures
   # --------
   test "Project fixtures are valid" do
