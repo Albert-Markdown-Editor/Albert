@@ -16,7 +16,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_20_083452) do
   enable_extension "plpgsql"
 
   create_table "blog_posts", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
-    t.string "name"
+    t.string "title"
     t.string "summary"
     t.date "release_date"
     t.uuid "project_id"
@@ -26,7 +26,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_20_083452) do
   end
 
   create_table "books", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
-    t.string "name"
+    t.string "title"
     t.string "summary"
     t.date "release_date"
     t.uuid "project_id"
@@ -94,11 +94,11 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_20_083452) do
               ELSE NULL::text
           END AS kind,
       COALESCE(books.id, blog_posts.id) AS id,
-      COALESCE(books.name, blog_posts.name) AS name,
+      COALESCE(books.title, blog_posts.title) AS name,
       COALESCE(books.summary, blog_posts.summary) AS summary,
       COALESCE(books.release_date, blog_posts.release_date) AS release_date,
       COALESCE(books.project_id, blog_posts.project_id) AS project_id
      FROM (books
-       FULL JOIN blog_posts USING (id, name, summary, release_date, project_id, created_at, updated_at));
+       FULL JOIN blog_posts USING (id, title, summary, release_date, project_id, created_at, updated_at));
   SQL
 end
