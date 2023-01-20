@@ -23,11 +23,12 @@ function commonComponentName(defaultName) {
 function componentControllerName(defaultName) {
   const namespaces = [
     ...new Set(
-      defaultName.split('--').filter((ns) => !['..', 'components'].includes(ns))
+      defaultName
+        .split('--')
+        .filter((ns) => !['..', 'components', 'controllers'].includes(ns))
     )
   ]
-  console.log(namespaces.join('-'))
-  return namespaces.join('-')
+  return namespaces.join('--')
 }
 
 const application = Application.start()

@@ -1,66 +1,64 @@
 # frozen_string_literal: true
 
-# Base project component class
+# Base +ViewComponent+ class. Make sure all your components inherit from +ApplicationComponent+.
+# The class contains a set helpers to answer common needs when it comes to rendering and testing
+# components in your views
 class ApplicationComponent < ViewComponent::Base
   class << self
-    def component_name
-      @cn ||= name.underscore
+    # Given two hashes representing HTML attributes (class, id, data, ...), the method
+    # merges +attr2+ into +attr1+, concatenating string values and overwriting all other
+    # values of different type.
+    #
+    # Use it to combine multiple attributes in your components and views.
+    #
+    # @param [Hash] attr1
+    # @param [Hash] attr2
+    # @return [Hash]
+    def concat_html_attributes(attr1, attr2)
+      return attr1 if attr2.blank?
+
+      result = attr1
+
+      result.tap do
+        attr2.each do |k, v|
+          result[k] = case v
+                      when String then [result.fetch(k, ""), v].compact.join
+                      when Hash then concat_html_attributes(result.fetch(k, {}), v)
+                      else v
+                      end
+        end
+      end
     end
 
-    def component_class_name
-      @ccn ||= component_name.dasherize.gsub("/", "__")
-    end
-
-    def component_stimulus_controller_name
-      @cscn = component_name.dasherize.gsub("/", "--")
+    # Maps component namespace into a CSS class. By default this
+    # class will be present in component +html_attributes+, allowing
+    # to easily identify component instances in DOM
+    def css_class
+      @ccs = name.underscore.dasherize.gsub("/", "--")
     end
   end
 
-  delegate :component_name, :component_class_name, :component_stimulus_controller_name, to: :class
+  delegate :css_class, :concat_html_attributes, to: :class
 
-  attr_reader :html_attributes, :with_controller
+  attr_reader :html_attributes
 
   def initialize(
     custom_html_attributes: {},
-    overwrite_html_attributes: false,
-    with_controller: false
+    overwrite_html_attributes: false
   )
-    @html_attributes = overwrite_html_attributes ? custom_html_attributes : concat_html_attributes(custom_html_attributes)
-    @with_controller = with_controller
+    @html_attributes = if overwrite_html_attributes
+      custom_html_attributes
+    else
+      concat_html_attributes(default_html_attributes, custom_html_attributes)
+    end
+
     super
   end
 
   private
 
-  def concat_html_attributes(custom_attrs, previous_attrs = default_html_attributes)
-    return previous_attrs if custom_attrs.blank?
-
-    custom_attrs.each_key do |k|
-      if custom_attrs[k].is_a? String
-        previous_attrs[k] = [previous_attrs.fetch(k, ""), custom_attrs[k]].select { |attr| !attr.blank? }.join(" ")
-      elsif custom_attrs[k].is_a? Hash
-        previous_attrs[k] = concat_html_attributes(custom_attrs[k], previous_attrs.fetch(k, {}))
-      else
-        previous_attrs[k] = custom_attrs[k]
-      end
-    end
-
-    previous_attrs
-  end
-
-  # Overwrite this method in your component to set custom classes and
-  # other HTML attributes. Hash will be merged with default HTML
-  # attributes and custom HTML attributes provided to component during
-  # initialization
-  def component_html_attributes = {}
-
-  # Set of default HTML attributes for all components.
-  # Assigned by application component initializer
-  def default_html_attributes
-    data = {}
-    data["component-name"] = component_name
-    data["controller"] = component_stimulus_controller_name if with_controller
-
-    concat_html_attributes(component_html_attributes, { class: component_class_name, data: })
-  end
+  # HTML attributes per component. Rewrite this method in your
+  # +ApplicationComponent+ descendants to define set of default
+  # attributes all your component instances will display in DOM
+  def default_html_attributes = { class: css_class }
 end

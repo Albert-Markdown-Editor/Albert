@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="Configuration for Stimulus controllers ready">
-      <change afterPath="$PROJECT_DIR$/app/controllers/preview_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/concerns/with_stimulus_controller_component.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/helpers/stimulus_helper.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/projects/index_component/filter_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/projects/index_component/filter_component.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/application.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/application.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/builds/.keep" beforeDir="false" afterPath="$PROJECT_DIR$/test/helpers/application_helper_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/application_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/application_component.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/sample_components/sample_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/sample_components/sample_component.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/sample_components/sample_component_with_stimulus_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/helpers/stimulus_helper_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/sample_components/sample_component_with_stimulus_controller/sample_component_with_stimulus_controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/sample_components/sample_component/sample_component_controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/application.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +85,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "js.linters.configure.manually.selectedeslint": "true",
-    "last_opened_file_path": "/Users/alberto-mac/Desktop/Projects/Albert/Albert/config/initializers",
+    "last_opened_file_path": "/Users/alberto-mac/Desktop/Projects/Albert/Albert/test/helpers",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.selected.package.eslint": "/Users/alberto-mac/Desktop/Projects/Albert/Albert-Template/node_modules/eslint",
@@ -88,17 +94,17 @@
     "prettierjs.PrettierConfiguration.Package": "/Users/alberto-mac/Desktop/Projects/Albert/Albert-Template/node_modules/prettier",
     "ruby.rails.projectView.checked": "true",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "vcs.Git",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "ts.external.directory.path": "/Applications/RubyMine.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test/helpers" />
+      <recent name="$PROJECT_DIR$/app/helpers" />
       <recent name="$PROJECT_DIR$/config/initializers" />
       <recent name="$PROJECT_DIR$/app/components/sample_components" />
       <recent name="$PROJECT_DIR$/app/components/projects/index_component" />
-      <recent name="$PROJECT_DIR$/test" />
-      <recent name="$PROJECT_DIR$/test/models/concerns/filters" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/test/components/previews/sample_components" />
@@ -255,6 +261,11 @@
       <workItem from="1668239257043" duration="16963000" />
       <workItem from="1668356984450" duration="8373000" />
       <workItem from="1668445807293" duration="1857000" />
+      <workItem from="1668771728174" duration="909000" />
+      <workItem from="1670164833712" duration="3358000" />
+      <workItem from="1670576370944" duration="5623000" />
+      <workItem from="1674131540057" duration="694000" />
+      <workItem from="1674198888796" duration="111000" />
     </task>
     <task id="LOCAL-00049" summary="Replace template project name">
       <created>1662281346067</created>
