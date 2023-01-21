@@ -1,8 +1,9 @@
 # frozen_string_literal: true
 
 class ProjectDeliverable < ApplicationRecord
-  # Ensures only deliverables with valid kinds are created
-  enum kind: %w[Book BlogPost]
+  class << self
+    def compatible_kinds = %w[Book BlogPost]
+  end
 
   include ViewBasedModel
 end
