@@ -20,6 +20,6 @@ module ViewBasedModel
   def readonly? = true
 
   included do
-    enum kind: compatible_kinds
+    enum kind: compatible_kinds.map { |k| [k, k.to_s] }.to_h
   end
 end
