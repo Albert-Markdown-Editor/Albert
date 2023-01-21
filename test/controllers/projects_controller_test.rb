@@ -20,7 +20,7 @@ class ProjectsControllerTest < ControllerTestHelper
 
     filtered_projects = Project.filter_by(filter_params)
 
-    get projects_path
+    get projects_path(**filter_params)
 
     result = assigns(:projects)
 
