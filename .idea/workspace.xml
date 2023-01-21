@@ -1,21 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="progress: improve view model concern &amp; test coverage">
-      <change afterPath="$PROJECT_DIR$/app/components/project_deliverables/index_component/deliverable_component/deliverable_component.html.haml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/project_deliverables/index_component/filter_component.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/concerns/filters/project_deliverable_filter_proxy.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/controllers/project_deliverables_controller_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/models/concerns/filters/project_deliverable_filter_proxy_test.rb" afterDir="false" />
+    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="progress: deliverables filters, views &amp; test coverage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/project_deliverables/index_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/project_deliverables/index_component.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/project_deliverables/index_component/deliverable_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/project_deliverables/index_component/deliverable_component.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/projects/index_component/project_component/project_component.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/projects/index_component/project_component/project_component.html.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/project_deliverables_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/project_deliverables_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/project_deliverable.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/project_deliverable.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/projects_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/projects_controller_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/models/project_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/project_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/concerns/view_based_model.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/concerns/view_based_model.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/models/concerns/view_based_model_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/concerns/view_based_model_test.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -271,14 +260,7 @@
       <workItem from="1667990866790" duration="1481000" />
       <workItem from="1668239257043" duration="14290000" />
       <workItem from="1674324614949" duration="860000" />
-      <workItem from="1674325571825" duration="2863000" />
-    </task>
-    <task id="LOCAL-00054" summary="Fix ci-pipeline">
-      <created>1662284227339</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1662284227339</updated>
+      <workItem from="1674325571825" duration="3902000" />
     </task>
     <task id="LOCAL-00055" summary="Fix ci-pipeline">
       <created>1662284371737</created>
@@ -616,7 +598,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674326003456</updated>
     </task>
-    <option name="localTasksCounter" value="103" />
+    <task id="LOCAL-00103" summary="progress: deliverables filters, views &amp; test coverage">
+      <created>1674328611075</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1674328611075</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -634,7 +623,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update gemfile.lock" />
     <MESSAGE value="Update NPM package" />
     <MESSAGE value="Add Project model and basic association between Project and Document" />
     <MESSAGE value="Basic routing for documents configured" />
@@ -659,7 +647,8 @@
     <MESSAGE value="progress: test coverage" />
     <MESSAGE value="progress: view based kinds enum compulsory" />
     <MESSAGE value="progress: improve view model concern &amp; test coverage" />
-    <option name="LAST_COMMIT_MESSAGE" value="progress: improve view model concern &amp; test coverage" />
+    <MESSAGE value="progress: deliverables filters, views &amp; test coverage" />
+    <option name="LAST_COMMIT_MESSAGE" value="progress: deliverables filters, views &amp; test coverage" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Albert@Development__Albert_Template.rcov" NAME="Development: Albert-Template Coverage Results" MODIFIED="1674201895547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Albert-Template" />

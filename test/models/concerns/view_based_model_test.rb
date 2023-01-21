@@ -17,4 +17,16 @@ class ViewBasedModelTest < ActiveSupport::TestCase
       InvalidViewBasedModel.include(ViewBasedModel)
     end
   end
+
+  test "ViewBasedModel concerns defines kinds enum in included class" do
+    ValidViewBasedModel.include(ViewBasedModel)
+
+    assert ValidViewBasedModel.defined_enums.key?("kind")
+  end
+
+  test "ViewBasedModel concerns kinds enum includes the respective compatible_kind values" do
+    ValidViewBasedModel.include(ViewBasedModel)
+
+    assert_equal ValidViewBasedModel.defined_enums.values.first.values.sort, ValidViewBasedModel.compatible_kinds.sort
+  end
 end
