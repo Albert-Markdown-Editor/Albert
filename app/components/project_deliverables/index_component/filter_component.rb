@@ -18,7 +18,7 @@ module ProjectDeliverables
             concat(form.label(:title, "Title"))
             concat(
               form.text_field(
-                :name,
+                :title,
                 value: filter_params[:title],
                 class: "border-b-2 focus:border-slate-400 focus:outline-none"
               )
@@ -30,7 +30,7 @@ module ProjectDeliverables
             concat(form.label(:summary, "Summary"))
             concat(
               form.text_field(
-                :description,
+                :summary,
                 value: filter_params[:summary],
                 class: "border-b-2 focus:border-slate-400 focus:outline-none"
               )
