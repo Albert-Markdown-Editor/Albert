@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="progress: view based kinds enum compulsory">
-      <change afterPath="$PROJECT_DIR$/test/models/concerns/view_based_model_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Albert-Template.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Albert-Template.iml" afterDir="false" />
+    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="progress: improve view model concern &amp; test coverage">
+      <change afterPath="$PROJECT_DIR$/app/components/project_deliverables/index_component/deliverable_component/deliverable_component.html.haml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/project_deliverables/index_component/filter_component.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/concerns/filters/project_deliverable_filter_proxy.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/controllers/project_deliverables_controller_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/models/concerns/filters/project_deliverable_filter_proxy_test.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/concerns/view_based_model.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/concerns/view_based_model.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/project_deliverables/index_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/project_deliverables/index_component.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/project_deliverables/index_component/deliverable_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/project_deliverables/index_component/deliverable_component.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/projects/index_component/project_component/project_component.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/projects/index_component/project_component/project_component.html.haml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/project_deliverables_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/project_deliverables_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/project_deliverable.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/project_deliverable.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/controllers/projects_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/projects_controller_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/models/project_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/project_test.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,32 +90,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/alberto-mac/Desktop/Projects/Albert/Albert/app/components&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;/Users/alberto-mac/Desktop/Projects/Albert/Albert-Template/node_modules/eslint&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/alberto-mac/Desktop/Projects/Albert/Albert-Template/node_modules/prettier&quot;,
-    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Applications/RubyMine.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "js.linters.configure.manually.selectedeslint": "true",
+    "last_opened_file_path": "/Users/alberto-mac/Desktop/Projects/Albert/Albert/app/components/project_deliverables/index_component",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.selected.package.eslint": "/Users/alberto-mac/Desktop/Projects/Albert/Albert-Template/node_modules/eslint",
+    "node.js.selected.package.standard": "",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/alberto-mac/Desktop/Projects/Albert/Albert-Template/node_modules/prettier",
+    "ruby.rails.projectView.checked": "true",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "vcs.Git",
+    "ts.external.directory.path": "/Applications/RubyMine.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/components/project_deliverables/index_component" />
+      <recent name="$PROJECT_DIR$/test/models/concerns/filters" />
+      <recent name="$PROJECT_DIR$/app/models/concerns/filters" />
+      <recent name="$PROJECT_DIR$/test/controllers" />
       <recent name="$PROJECT_DIR$/app/components" />
-      <recent name="$PROJECT_DIR$/app/views" />
-      <recent name="$PROJECT_DIR$/app/controllers" />
-      <recent name="$PROJECT_DIR$/test/fixtures" />
-      <recent name="$PROJECT_DIR$/app/components/projects/index_component" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/models" />
@@ -262,14 +271,7 @@
       <workItem from="1667990866790" duration="1481000" />
       <workItem from="1668239257043" duration="14290000" />
       <workItem from="1674324614949" duration="860000" />
-      <workItem from="1674325571825" duration="284000" />
-    </task>
-    <task id="LOCAL-00053" summary="Fix ci-pipeline">
-      <created>1662284106214</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1662284106214</updated>
+      <workItem from="1674325571825" duration="2863000" />
     </task>
     <task id="LOCAL-00054" summary="Fix ci-pipeline">
       <created>1662284227339</created>
@@ -607,7 +609,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674249547862</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="progress: improve view model concern &amp; test coverage">
+      <created>1674326003455</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1674326003456</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -625,7 +634,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add basic logic for document JS controlling" />
     <MESSAGE value="Update gemfile.lock" />
     <MESSAGE value="Update NPM package" />
     <MESSAGE value="Add Project model and basic association between Project and Document" />
@@ -650,7 +658,8 @@
     <MESSAGE value="chore: rename name to title for BlogPost &amp; Book" />
     <MESSAGE value="progress: test coverage" />
     <MESSAGE value="progress: view based kinds enum compulsory" />
-    <option name="LAST_COMMIT_MESSAGE" value="progress: view based kinds enum compulsory" />
+    <MESSAGE value="progress: improve view model concern &amp; test coverage" />
+    <option name="LAST_COMMIT_MESSAGE" value="progress: improve view model concern &amp; test coverage" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Albert@Development__Albert_Template.rcov" NAME="Development: Albert-Template Coverage Results" MODIFIED="1674201895547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Albert-Template" />

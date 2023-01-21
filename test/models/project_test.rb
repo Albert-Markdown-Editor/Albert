@@ -5,6 +5,8 @@ class ProjectTest < ModelTestHelper
     @sample_project = projects(:recipes_book)
   end
 
+  # Methods
+  # -------
   test ".deliverables return all project deliverables" do
     project_kinds = ProjectDeliverable.kinds.keys.map(&:underscore).map(&:pluralize)
     project_deliverables = project_kinds.map { |k| @sample_project.send(k) }.flatten.map { |d| d.id }.sort

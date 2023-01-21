@@ -13,6 +13,9 @@ module ProjectDeliverables
     def call
       tag.div do
         concat(
+          render(FilterComponent.new(project:))
+        )
+        concat(
           tag.div(class: "divide-y") { concat(render(DeliverableComponent.with_collection(deliverables))) }
         )
       end

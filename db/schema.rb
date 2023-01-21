@@ -94,7 +94,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_20_083452) do
               ELSE NULL::text
           END AS kind,
       COALESCE(books.id, blog_posts.id) AS id,
-      COALESCE(books.title, blog_posts.title) AS name,
+      COALESCE(books.title, blog_posts.title) AS title,
       COALESCE(books.summary, blog_posts.summary) AS summary,
       COALESCE(books.release_date, blog_posts.release_date) AS release_date,
       COALESCE(books.project_id, blog_posts.project_id) AS project_id
