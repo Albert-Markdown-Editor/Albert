@@ -8,7 +8,7 @@ module ViewBasedModel
   class_methods do
     def compatible_kinds
       raise "
-        Model #{self.name} does not define `compatible_kinds` class method.
+        Model #{name} does not define `compatible_kinds` class method.
         Define method returning an array of strings corresponding to the model
         class names of the tables the view record is composed of. Check example
         in Project and ProjectDeliverable classes.
@@ -20,6 +20,6 @@ module ViewBasedModel
   def readonly? = true
 
   included do
-    enum kind: compatible_kinds.map { |k| [k, k.to_s] }.to_h
+    enum kind: compatible_kinds.index_with(&:to_s)
   end
 end

@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="progress: deliverables filters, views &amp; test coverage">
+    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="Fix: project deliverables filter form">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/blog_post.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/blog_post.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/book.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/book.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/concerns/view_based_model.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/concerns/view_based_model.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/models/concerns/view_based_model_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/concerns/view_based_model_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/project.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/project.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/factories/blog_posts.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/factories/blog_posts.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/factories/books.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/factories/books.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +89,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "js.linters.configure.manually.selectedeslint": "true",
-    "last_opened_file_path": "/Users/alberto-mac/Desktop/Projects/Albert/Albert/app/components/project_deliverables/index_component",
+    "last_opened_file_path": "/Users/alberto-mac/Desktop/Projects/Albert/Albert/test/models",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.selected.package.eslint": "/Users/alberto-mac/Desktop/Projects/Albert/Albert-Template/node_modules/eslint",
@@ -100,11 +104,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test/models" />
       <recent name="$PROJECT_DIR$/app/components/project_deliverables/index_component" />
       <recent name="$PROJECT_DIR$/test/models/concerns/filters" />
       <recent name="$PROJECT_DIR$/app/models/concerns/filters" />
       <recent name="$PROJECT_DIR$/test/controllers" />
-      <recent name="$PROJECT_DIR$/app/components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/models" />
@@ -260,21 +264,7 @@
       <workItem from="1667990866790" duration="1481000" />
       <workItem from="1668239257043" duration="14290000" />
       <workItem from="1674324614949" duration="860000" />
-      <workItem from="1674325571825" duration="3902000" />
-    </task>
-    <task id="LOCAL-00055" summary="Fix ci-pipeline">
-      <created>1662284371737</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1662284371737</updated>
-    </task>
-    <task id="LOCAL-00056" summary="Fix ci-pipeline">
-      <created>1662284493660</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1662284493660</updated>
+      <workItem from="1674325571825" duration="4569000" />
     </task>
     <task id="LOCAL-00057" summary="Fix ci-pipeline">
       <created>1662285085268</created>
@@ -605,7 +595,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674328611075</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="Fix: view kind parser">
+      <created>1674329639426</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1674329639426</updated>
+    </task>
+    <task id="LOCAL-00105" summary="Fix: project deliverables filter form">
+      <created>1674329791275</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1674329791275</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -623,8 +627,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update NPM package" />
-    <MESSAGE value="Add Project model and basic association between Project and Document" />
     <MESSAGE value="Basic routing for documents configured" />
     <MESSAGE value="Progress" />
     <MESSAGE value="Add slugs to Project" />
@@ -648,7 +650,9 @@
     <MESSAGE value="progress: view based kinds enum compulsory" />
     <MESSAGE value="progress: improve view model concern &amp; test coverage" />
     <MESSAGE value="progress: deliverables filters, views &amp; test coverage" />
-    <option name="LAST_COMMIT_MESSAGE" value="progress: deliverables filters, views &amp; test coverage" />
+    <MESSAGE value="Fix: view kind parser" />
+    <MESSAGE value="Fix: project deliverables filter form" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix: project deliverables filter form" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Albert@Development__Albert_Template.rcov" NAME="Development: Albert-Template Coverage Results" MODIFIED="1674201895547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Albert-Template" />
