@@ -24,8 +24,6 @@ FileUtils.chdir APP_ROOT do
 
   puts "\n ### Bundle Audit Inspector"
   puts "\n --------------------------"
-  # system! "gem install bundler-audit"
-  # system! "bundle exec bundle-audit check --update"
-
-  # TODO: add audit for Bullet
+  system! "gem install bundler-audit"
+  system! "bundle exec bundle-audit check --update"
 end

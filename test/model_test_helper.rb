@@ -30,4 +30,8 @@ class ModelTestHelper < ActiveSupport::TestCase
       assert_equal model.slug, new_slug
     end
   end
+
+  def assert_equal_relation_records(expected, result)
+    assert_equal result.pluck(:id).sort, expected.pluck(:id).sort
+  end
 end

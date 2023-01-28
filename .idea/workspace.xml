@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="Fix: project deliverables filter form">
+    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="Fix: remove Gem audits for now">
+      <change afterPath="$PROJECT_DIR$/test/models/project_deliverable_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Albert-Template.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Albert-Template.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/blog_post.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/blog_post.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/book.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/book.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/concerns/view_based_model.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/concerns/view_based_model.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/project.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/project.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/factories/blog_posts.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/factories/blog_posts.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/factories/books.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/factories/books.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/ci-audits" beforeDir="false" afterPath="$PROJECT_DIR$/bin/ci-audits" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/environments/production.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/production.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/model_test_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/model_test_helper.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +38,10 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
+                    <option name="branchName" value="140-multistep-form" />
+                    <option name="lastUsedInstant" value="1674936433" />
+                  </RecentBranch>
+                  <RecentBranch>
                     <option name="branchName" value="133-create-a-list-with-filter-options-for-project-items" />
                     <option name="lastUsedInstant" value="1674199129" />
                   </RecentBranch>
@@ -50,10 +56,6 @@
                   <RecentBranch>
                     <option name="branchName" value="feature/markdown-models" />
                     <option name="lastUsedInstant" value="1663507267" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="feature/configure-scripts" />
-                    <option name="lastUsedInstant" value="1662281358" />
                   </RecentBranch>
                 </list>
               </option>
@@ -83,25 +85,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "js.linters.configure.manually.selectedeslint": "true",
-    "last_opened_file_path": "/Users/alberto-mac/Desktop/Projects/Albert/Albert/test/models",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.selected.package.eslint": "/Users/alberto-mac/Desktop/Projects/Albert/Albert-Template/node_modules/eslint",
-    "node.js.selected.package.standard": "",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/alberto-mac/Desktop/Projects/Albert/Albert-Template/node_modules/prettier",
-    "ruby.rails.projectView.checked": "true",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "vcs.Git",
-    "ts.external.directory.path": "/Applications/RubyMine.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/alberto-mac/Desktop/Projects/Albert/Albert/test/models&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;/Users/alberto-mac/Desktop/Projects/Albert/Albert-Template/node_modules/eslint&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/alberto-mac/Desktop/Projects/Albert/Albert-Template/node_modules/prettier&quot;,
+    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/RubyMine.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/test/models" />
@@ -264,21 +266,8 @@
       <workItem from="1667990866790" duration="1481000" />
       <workItem from="1668239257043" duration="14290000" />
       <workItem from="1674324614949" duration="860000" />
-      <workItem from="1674325571825" duration="4569000" />
-    </task>
-    <task id="LOCAL-00057" summary="Fix ci-pipeline">
-      <created>1662285085268</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1662285085269</updated>
-    </task>
-    <task id="LOCAL-00058" summary="Fix ci-pipeline">
-      <created>1662285226367</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1662285226367</updated>
+      <workItem from="1674325571825" duration="6616000" />
+      <workItem from="1674936387305" duration="996000" />
     </task>
     <task id="LOCAL-00059" summary="Fix ci-pipeline">
       <created>1662285641894</created>
@@ -609,7 +598,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674329791275</updated>
     </task>
-    <option name="localTasksCounter" value="106" />
+    <task id="LOCAL-00106" summary="Fix: tests">
+      <created>1674330206990</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1674330206990</updated>
+    </task>
+    <task id="LOCAL-00107" summary="Fix: remove Gem audits for now">
+      <created>1674330443565</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1674330443566</updated>
+    </task>
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -627,8 +630,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Basic routing for documents configured" />
-    <MESSAGE value="Progress" />
     <MESSAGE value="Add slugs to Project" />
     <MESSAGE value="Basic index and show routes for projects ready" />
     <MESSAGE value="Project document basic routes are working" />
@@ -652,7 +653,9 @@
     <MESSAGE value="progress: deliverables filters, views &amp; test coverage" />
     <MESSAGE value="Fix: view kind parser" />
     <MESSAGE value="Fix: project deliverables filter form" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix: project deliverables filter form" />
+    <MESSAGE value="Fix: tests" />
+    <MESSAGE value="Fix: remove Gem audits for now" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix: remove Gem audits for now" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Albert@Development__Albert_Template.rcov" NAME="Development: Albert-Template Coverage Results" MODIFIED="1674201895547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Albert-Template" />
