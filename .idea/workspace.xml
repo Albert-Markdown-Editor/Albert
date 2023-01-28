@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="Chore: update rails &amp; dependencies">
-      <change afterPath="$PROJECT_DIR$/app/views/projects/edit.html.haml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/projects/new.html.haml" afterDir="false" />
+    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="Progress: actions and views for project creation">
+      <change afterPath="$PROJECT_DIR$/app/components/common/multistep_form_component.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/projects/new_component.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/concerns/multistep_form_model.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/models/concerns/multistep_form_model_test.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/projects/index_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/projects/index_component.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/projects_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/projects_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/project.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/project.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +91,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "js.linters.configure.manually.selectedeslint": "true",
-    "last_opened_file_path": "/Users/alberto-mac/Desktop/Projects/Albert/Albert/app/views/projects",
+    "last_opened_file_path": "/Users/alberto-mac/Desktop/Projects/Albert/Albert/test/models/concerns",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -107,11 +110,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test/models/concerns" />
+      <recent name="$PROJECT_DIR$/app/components/projects" />
+      <recent name="$PROJECT_DIR$/app/views/projects" />
       <recent name="$PROJECT_DIR$/test/models" />
       <recent name="$PROJECT_DIR$/app/components/project_deliverables/index_component" />
-      <recent name="$PROJECT_DIR$/test/models/concerns/filters" />
-      <recent name="$PROJECT_DIR$/app/models/concerns/filters" />
-      <recent name="$PROJECT_DIR$/test/controllers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/models" />
@@ -269,14 +272,7 @@
       <workItem from="1674324614949" duration="860000" />
       <workItem from="1674325571825" duration="6616000" />
       <workItem from="1674936387305" duration="1084000" />
-      <workItem from="1674937535104" duration="518000" />
-    </task>
-    <task id="LOCAL-00060" summary="Fix ci-pipeline">
-      <created>1662299302265</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1662299302265</updated>
+      <workItem from="1674937535104" duration="3199000" />
     </task>
     <task id="LOCAL-00061" summary="Create Document model">
       <created>1662307995484</created>
@@ -614,7 +610,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674937422648</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="Progress: actions and views for project creation">
+      <created>1674938205285</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1674938205285</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -632,7 +635,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Basic index and show routes for projects ready" />
     <MESSAGE value="Project document basic routes are working" />
     <MESSAGE value="Fix document fixtures and added test coverage for model" />
     <MESSAGE value="PR ready for submission" />
@@ -657,7 +659,8 @@
     <MESSAGE value="Fix: tests" />
     <MESSAGE value="Fix: remove Gem audits for now" />
     <MESSAGE value="Chore: update rails &amp; dependencies" />
-    <option name="LAST_COMMIT_MESSAGE" value="Chore: update rails &amp; dependencies" />
+    <MESSAGE value="Progress: actions and views for project creation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Progress: actions and views for project creation" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Albert@Development__Albert_Template.rcov" NAME="Development: Albert-Template Coverage Results" MODIFIED="1674201895547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Albert-Template" />
