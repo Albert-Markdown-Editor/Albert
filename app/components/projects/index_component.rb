@@ -12,6 +12,9 @@ module Projects
     def call
       tag.div do
         concat(
+          link_to("Create new project", new_project_path)
+        )
+        concat(
           render(FilterComponent.new)
         )
         concat(

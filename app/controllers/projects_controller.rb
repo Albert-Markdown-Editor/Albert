@@ -13,6 +13,14 @@ class ProjectsController < ApplicationController
     @projects = filter(@projects)
   end
 
+  # GET /projects/new
+  def new
+  end
+
+  # GET /projects/<project_name>/edit
+  def edit
+  end
+
   # GET /projects/<project_name>
   def show
     redirect_to_url_with_active_slug if request_with_deprecated_slug?
