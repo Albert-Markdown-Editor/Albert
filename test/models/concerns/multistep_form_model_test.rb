@@ -27,4 +27,13 @@ class MultistepFormModelTest < ActiveSupport::TestCase
     @model.total_steps = 3
     assert @model.valid?
   end
+
+  test "MultistepFormModel sets custom error attribute and detail when total and current step attributes are invalid" do
+    @model.current_step = 1
+    @model.total_steps = 2
+    refute @model.valid?
+
+    assert_equal @model.errors.first.attribute, MultistepFormModel::ERROR_ATTRIBUTE
+    assert_equal @model.errors.first.detail, MultistepFormModel::ERROR_DETAIL
+  end
 end
