@@ -1,26 +1,16 @@
 # frozen_string_literal: true
 
 module Projects
-  class IndexComponent < ApplicationComponent
-    attr_reader :projects
+  class NewComponent < ApplicationComponent
+    attr_reader :project
 
-    def initialize(projects:, html_attributes: {})
-      @projects = projects
+    def initialize(project:, html_attributes: {})
+      @project = project
       super(html_attributes:)
     end
 
     def call
-      tag.div do
-        concat(
-          link_to("Create new project", new_project_path)
-        )
-        concat(
-          render(FilterComponent.new)
-        )
-        concat(
-          tag.div(class: "divide-y") { concat(render(ProjectComponent.with_collection(projects))) }
-        )
-      end
+      render Common::Projects::FormComponent.new(url: "", model: project)
     end
   end
 end
