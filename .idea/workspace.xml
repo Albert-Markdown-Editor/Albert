@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="Progress: actions and views for project creation">
+    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="Fix: multistep form concern tests">
+      <change afterPath="$PROJECT_DIR$/app/components/common/multistep_form_component/step_component.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/common/projects/form_component.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/common/projects/form_component/project_deliverables_component.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/common/projects/form_component/project_details_component.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/models/concerns/multistep_form_model_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/concerns/multistep_form_model_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/application_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/application_component.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/common/multistep_form_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/multistep_form_component.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/projects/new_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/projects/new_component.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/projects/new.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/projects/new.html.haml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,36 +88,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/alberto-mac/Desktop/Projects/Albert/Albert/test/models/concerns&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;/Users/alberto-mac/Desktop/Projects/Albert/Albert-Template/node_modules/eslint&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/alberto-mac/Desktop/Projects/Albert/Albert-Template/node_modules/prettier&quot;,
-    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
-    &quot;ruby.structure.view.model.defaults.configured&quot;: &quot;true&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Applications/RubyMine.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "js.linters.configure.manually.selectedeslint": "true",
+    "last_opened_file_path": "/Users/alberto-mac/Desktop/Projects/Albert/Albert/app/components/common/projects/form_component",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "/Users/alberto-mac/Desktop/Projects/Albert/Albert-Template/node_modules/eslint",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/alberto-mac/Desktop/Projects/Albert/Albert-Template/node_modules/prettier",
+    "ruby.rails.projectView.checked": "true",
+    "ruby.structure.view.model.defaults.configured": "true",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "vcs.Git",
+    "ts.external.directory.path": "/Applications/RubyMine.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/components/common/projects/form_component" />
       <recent name="$PROJECT_DIR$/test/models/concerns" />
       <recent name="$PROJECT_DIR$/app/components/projects" />
       <recent name="$PROJECT_DIR$/app/views/projects" />
       <recent name="$PROJECT_DIR$/test/models" />
-      <recent name="$PROJECT_DIR$/app/components/project_deliverables/index_component" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/models" />
@@ -269,14 +276,7 @@
       <workItem from="1674325571825" duration="6616000" />
       <workItem from="1674936387305" duration="1084000" />
       <workItem from="1674937535104" duration="3199000" />
-      <workItem from="1674989820344" duration="922000" />
-    </task>
-    <task id="LOCAL-00061" summary="Create Document model">
-      <created>1662307995484</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1662307995484</updated>
+      <workItem from="1674989820344" duration="8889000" />
     </task>
     <task id="LOCAL-00062" summary="Added DocumentFragments model &amp; defined concern for STI subclasses preload">
       <created>1662407164535</created>
@@ -614,7 +614,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674938205285</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="Fix: multistep form concern tests">
+      <created>1675001654278</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1675001654278</updated>
+    </task>
+    <option name="localTasksCounter" value="111" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -632,7 +639,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Project document basic routes are working" />
     <MESSAGE value="Fix document fixtures and added test coverage for model" />
     <MESSAGE value="PR ready for submission" />
     <MESSAGE value="Add factories tests" />
@@ -657,7 +663,8 @@
     <MESSAGE value="Fix: remove Gem audits for now" />
     <MESSAGE value="Chore: update rails &amp; dependencies" />
     <MESSAGE value="Progress: actions and views for project creation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Progress: actions and views for project creation" />
+    <MESSAGE value="Fix: multistep form concern tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix: multistep form concern tests" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Albert@Development__Albert_Template.rcov" NAME="Development: Albert-Template Coverage Results" MODIFIED="1674201895547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Albert-Template" />
