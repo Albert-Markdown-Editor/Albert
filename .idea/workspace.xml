@@ -4,16 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="Fix: multistep form concern tests">
-      <change afterPath="$PROJECT_DIR$/app/components/common/multistep_form_component/step_component.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/common/projects/form_component.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/common/projects/form_component/project_deliverables_component.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/common/projects/form_component/project_details_component.rb" afterDir="false" />
+    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="progress: multistep form component ready">
+      <change afterPath="$PROJECT_DIR$/app/components/common/projects/form_component/project_preview_component.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/projects/create.html.haml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/application_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/application_component.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Procfile.dev" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile.dev" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/common/multistep_form_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/multistep_form_component.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/common/multistep_form_component/step_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/multistep_form_component/step_component.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/common/projects/form_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/projects/form_component.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/common/projects/form_component/project_deliverables_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/projects/form_component/project_deliverables_component.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/common/projects/form_component/project_details_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/projects/form_component/project_details_component.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/projects/new_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/projects/new_component.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/projects/new.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/projects/new.html.haml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/projects_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/projects_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +97,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "js.linters.configure.manually.selectedeslint": "true",
-    "last_opened_file_path": "/Users/alberto-mac/Desktop/Projects/Albert/Albert/app/components/common/projects/form_component",
+    "last_opened_file_path": "/Users/alberto-mac/Desktop/Projects/Albert/Albert/app/views/projects",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -113,10 +116,10 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views/projects" />
       <recent name="$PROJECT_DIR$/app/components/common/projects/form_component" />
       <recent name="$PROJECT_DIR$/test/models/concerns" />
       <recent name="$PROJECT_DIR$/app/components/projects" />
-      <recent name="$PROJECT_DIR$/app/views/projects" />
       <recent name="$PROJECT_DIR$/test/models" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -276,14 +279,7 @@
       <workItem from="1674325571825" duration="6616000" />
       <workItem from="1674936387305" duration="1084000" />
       <workItem from="1674937535104" duration="3199000" />
-      <workItem from="1674989820344" duration="8889000" />
-    </task>
-    <task id="LOCAL-00062" summary="Added DocumentFragments model &amp; defined concern for STI subclasses preload">
-      <created>1662407164535</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1662407164536</updated>
+      <workItem from="1674989820344" duration="16532000" />
     </task>
     <task id="LOCAL-00063" summary="Added DocumentFragment fixtures">
       <created>1662485956603</created>
@@ -621,7 +617,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675001654278</updated>
     </task>
-    <option name="localTasksCounter" value="111" />
+    <task id="LOCAL-00111" summary="progress: multistep form component ready">
+      <created>1675189081569</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1675189081570</updated>
+    </task>
+    <option name="localTasksCounter" value="112" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -639,7 +642,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fix document fixtures and added test coverage for model" />
     <MESSAGE value="PR ready for submission" />
     <MESSAGE value="Add factories tests" />
     <MESSAGE value="Add missing end line to few files" />
@@ -664,9 +666,10 @@
     <MESSAGE value="Chore: update rails &amp; dependencies" />
     <MESSAGE value="Progress: actions and views for project creation" />
     <MESSAGE value="Fix: multistep form concern tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix: multistep form concern tests" />
+    <MESSAGE value="progress: multistep form component ready" />
+    <option name="LAST_COMMIT_MESSAGE" value="progress: multistep form component ready" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Albert@Development__Albert_Template.rcov" NAME="Development: Albert-Template Coverage Results" MODIFIED="1674201895547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Albert-Template" />
+    <SUITE FILE_PATH="coverage/Albert@Development__Albert_Template.rcov" NAME="Development: Albert-Template Coverage Results" MODIFIED="1675362412067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Albert-Template" />
   </component>
 </project>

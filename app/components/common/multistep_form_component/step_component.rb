@@ -12,10 +12,11 @@ module Common
       end
     end
 
-    attr_reader :multistep_form, :index
+    attr_reader :multistep_form, :index, :form
 
     def initialize(multistep_form:, index:, html_attributes: {})
       @index = index
+      @form = multistep_form.form
       @multistep_form = multistep_form
       super(html_attributes:)
     end

@@ -17,6 +17,15 @@ class ProjectsController < ApplicationController
   def new
   end
 
+  # POST /projects
+  def create
+    @project = Project.new(project_params)
+
+    if(@project.save)
+      redirect_to project_path(@project), notice: "Project created"
+    end
+  end
+
   # GET /projects/<project_name>/edit
   def edit
   end
@@ -36,5 +45,9 @@ class ProjectsController < ApplicationController
       name: params["name"],
       description: params["description"],
     }
+  end
+
+  def project_params
+    params.require(:project).permit(:name, :description, :total_steps, :current_step)
   end
 end
