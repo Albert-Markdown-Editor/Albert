@@ -48,6 +48,8 @@ class ProjectsController < ApplicationController
   end
 
   def project_params
-    params.require(:project).permit(:name, :description, :total_steps, :current_step)
+    params
+      .require(:project)
+      .permit(:name, :description, :total_steps, :current_step, books_attributes: [:title, :description])
   end
 end

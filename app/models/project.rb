@@ -23,6 +23,8 @@ class Project < ApplicationRecord
   # Validations
   validates :name, presence: true
 
+  validates_associated :books
+
   # Friendly URL Slug Configuration
   configure_slug(:name, with_history: true)
 

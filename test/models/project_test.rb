@@ -58,6 +58,21 @@ class ProjectTest < ModelTestHelper
     assert result.errors.key?(:name)
   end
 
+  test "A project with books requires books to be valid" do
+    result = FactoryBot.build(:project)
+    assert result.valid?
+
+    book = FactoryBot.build(:book)
+    assert book.valid?
+
+    book.title = nil
+    refute book.valid?
+
+    result.books << book
+    assert_not result.valid?
+    assert result.errors.key?(:books)
+  end
+
   private
 
   def expected_slug(item)
