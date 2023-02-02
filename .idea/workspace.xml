@@ -4,19 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="progress: multistep form component ready">
-      <change afterPath="$PROJECT_DIR$/app/components/common/projects/form_component/project_preview_component.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/projects/create.html.haml" afterDir="false" />
+    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="progress: project form">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Procfile.dev" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile.dev" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/common/multistep_form_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/multistep_form_component.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/common/multistep_form_component/step_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/multistep_form_component/step_component.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/common/projects/form_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/projects/form_component.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/application_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/application_component.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/common/projects/form_component/project_deliverables_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/projects/form_component/project_deliverables_component.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/common/projects/form_component/project_details_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/projects/form_component/project_details_component.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/projects/new_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/projects/new_component.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/projects_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/projects_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/book.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/book.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/project.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/project.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/models/book_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/book_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/models/project_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/project_test.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -279,14 +275,7 @@
       <workItem from="1674325571825" duration="6616000" />
       <workItem from="1674936387305" duration="1084000" />
       <workItem from="1674937535104" duration="3199000" />
-      <workItem from="1674989820344" duration="16532000" />
-    </task>
-    <task id="LOCAL-00063" summary="Added DocumentFragment fixtures">
-      <created>1662485956603</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1662485956604</updated>
+      <workItem from="1674989820344" duration="18834000" />
     </task>
     <task id="LOCAL-00064" summary="Added logic to convert DocumentFragment content to Markdown formatted text">
       <created>1662486895012</created>
@@ -624,7 +613,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675189081570</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="progress: project form">
+      <created>1675364424702</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1675364424703</updated>
+    </task>
+    <option name="localTasksCounter" value="113" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -642,7 +638,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="PR ready for submission" />
     <MESSAGE value="Add factories tests" />
     <MESSAGE value="Add missing end line to few files" />
     <MESSAGE value="Refactored model Friendly ID logic into a concern" />
@@ -667,9 +662,10 @@
     <MESSAGE value="Progress: actions and views for project creation" />
     <MESSAGE value="Fix: multistep form concern tests" />
     <MESSAGE value="progress: multistep form component ready" />
-    <option name="LAST_COMMIT_MESSAGE" value="progress: multistep form component ready" />
+    <MESSAGE value="progress: project form" />
+    <option name="LAST_COMMIT_MESSAGE" value="progress: project form" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Albert@Development__Albert_Template.rcov" NAME="Development: Albert-Template Coverage Results" MODIFIED="1675362412067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Albert-Template" />
+    <SUITE FILE_PATH="coverage/Albert@Development__Albert_Template.rcov" NAME="Development: Albert-Template Coverage Results" MODIFIED="1675365839814" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Albert-Template" />
   </component>
 </project>

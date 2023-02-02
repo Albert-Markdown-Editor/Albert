@@ -26,7 +26,7 @@ class ApplicationComponent < ViewComponent::Base
   private
 
   def concat_html_attributes(old_html_attributes, new_html_attributes)
-    default_html_attributes.merge(old_html_attributes, new_html_attributes) do |key, oldval, newval|
+    old_html_attributes.merge(new_html_attributes) do |key, oldval, newval|
       case oldval
       when String then "#{oldval} #{newval}"
       when Hash then concat_html_attributes(oldval, newval)
