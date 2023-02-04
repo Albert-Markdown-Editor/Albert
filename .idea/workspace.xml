@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="progress: project form">
+    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="progress: nested form">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/application_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/application_component.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/common/projects/form_component/project_deliverables_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/projects/form_component/project_deliverables_component.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/projects_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/projects_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/book.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/book.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/project.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/project.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/models/book_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/book_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/models/project_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/project_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/common/multistep_form_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/multistep_form_component.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/common/projects/form_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/projects/form_component.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,29 +82,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "js.linters.configure.manually.selectedeslint": "true",
-    "last_opened_file_path": "/Users/alberto-mac/Desktop/Projects/Albert/Albert/app/views/projects",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "/Users/alberto-mac/Desktop/Projects/Albert/Albert-Template/node_modules/eslint",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/alberto-mac/Desktop/Projects/Albert/Albert-Template/node_modules/prettier",
-    "ruby.rails.projectView.checked": "true",
-    "ruby.structure.view.model.defaults.configured": "true",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "vcs.Git",
-    "ts.external.directory.path": "/Applications/RubyMine.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/alberto-mac/Desktop/Projects/Albert/Albert/app/views/projects&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;/Users/alberto-mac/Desktop/Projects/Albert/Albert-Template/node_modules/eslint&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/alberto-mac/Desktop/Projects/Albert/Albert-Template/node_modules/prettier&quot;,
+    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
+    &quot;ruby.structure.view.model.defaults.configured&quot;: &quot;true&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/RubyMine.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/views/projects" />
@@ -275,14 +270,9 @@
       <workItem from="1674325571825" duration="6616000" />
       <workItem from="1674936387305" duration="1084000" />
       <workItem from="1674937535104" duration="3199000" />
-      <workItem from="1674989820344" duration="18834000" />
-    </task>
-    <task id="LOCAL-00064" summary="Added logic to convert DocumentFragment content to Markdown formatted text">
-      <created>1662486895012</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1662486895012</updated>
+      <workItem from="1674989820344" duration="19306000" />
+      <workItem from="1675446739489" duration="78000" />
+      <workItem from="1675446865156" duration="4652000" />
     </task>
     <task id="LOCAL-00065" summary="Added Markdown parser gems">
       <created>1662488235588</created>
@@ -620,7 +610,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675364424703</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="progress: nested form">
+      <created>1675366726003</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1675366726004</updated>
+    </task>
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -638,7 +635,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add factories tests" />
     <MESSAGE value="Add missing end line to few files" />
     <MESSAGE value="Refactored model Friendly ID logic into a concern" />
     <MESSAGE value="Implemented model filter logic and basic filter proxy tests" />
@@ -663,9 +659,10 @@
     <MESSAGE value="Fix: multistep form concern tests" />
     <MESSAGE value="progress: multistep form component ready" />
     <MESSAGE value="progress: project form" />
-    <option name="LAST_COMMIT_MESSAGE" value="progress: project form" />
+    <MESSAGE value="progress: nested form" />
+    <option name="LAST_COMMIT_MESSAGE" value="progress: nested form" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Albert@Development__Albert_Template.rcov" NAME="Development: Albert-Template Coverage Results" MODIFIED="1675365839814" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Albert-Template" />
+    <SUITE FILE_PATH="coverage/Albert@Development__Albert_Template.rcov" NAME="Development: Albert-Template Coverage Results" MODIFIED="1675446896118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Albert-Template" />
   </component>
 </project>
