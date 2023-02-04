@@ -20,8 +20,8 @@ module Common
       form_with(url:, model: model) do |form|
         @form = form
 
-        concat(form.hidden_field(:current_step, value: current_step))
-        concat(form.hidden_field(:total_steps, value: steps.count))
+        concat(form.hidden_field(:current_step))
+        concat(form.hidden_field(:total_steps))
 
         steps.each_with_index do |step, index|
           concat(step_wrapper(step, index) { render step.new(multistep_form: self, index:) })
@@ -29,16 +29,51 @@ module Common
       end
     end
 
+    def radio_id(step_index) = "#{object_id}_radio_#{step_index}"
+
+    def checkbox_id(step_index) = "#{object_id}_radio_#{step_index}"
+
     def step_wrapper(step, index, html_attributes: {}, &content)
-      tag.div(**html_attributes, &content)
+      tag.div(**html_attributes) do
+        concat(
+          radio_button_tag(
+            radio_id(nil),
+            1,
+            current_step_index == index,
+            id: radio_id(index),
+            class: "hidden peer/radio"
+          )
+        )
+        concat(
+          check_box_tag(
+            checkbox_id(index),
+            1,
+            current_step_index == index,
+            id: checkbox_id(index),
+            class: "hidden peer/checkbox"
+          )
+        )
+        concat(capture(&content))
+      end
     end
 
-    def current_step
-      previous_step_index = @model.current_step.to_i || 1
-
-      previous_step = steps[previous_step_index - 1]
-
-      @current_step ||= previous_step_index + (previous_step&.completed?(form.object) ? 1 : 0)
+    def previous_step_index
+      model.current_step.blank? ? 0 : model.current_step.to_i
     end
+
+    def previous_step_completed?
+      steps[previous_step_index]&.completed?(model)
+    end
+
+    def first_incomplete_step_index
+      steps.find_index { |s| !s.completed?(model) } || 0
+    end
+
+    def previous_step_next_incompleted_step_index
+      uncompleted_step = steps[previous_step_index..].find { |s| s.completed?(model) }
+      steps.find_index(uncompleted_step)
+    end
+
+    def current_step_index = first_incomplete_step_index
   end
 end
