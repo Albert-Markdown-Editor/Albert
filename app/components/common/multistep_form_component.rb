@@ -8,23 +8,24 @@ module Common
 
     delegate :steps, to: :class
 
-    attr_reader :url, :model, :form
+    attr_reader :form_url, :back_url, :model, :form
 
-    def initialize(url:, model:, html_attributes: {})
-      @url = url
+    def initialize(form_url:, back_url:, model:, html_attributes: {})
+      @form_url = form_url
+      @back_url = back_url
       @model = model
       super(html_attributes:)
     end
 
     def call
-      form_with(url:, model: model) do |form|
+      form_with(form_url:, model: model, **wrapper_attributes) do |form|
         @form = form
 
         concat(form.hidden_field(:current_step))
         concat(form.hidden_field(:total_steps))
 
         steps.each_with_index do |step, index|
-          concat(step_wrapper(step, index) { render step.new(multistep_form: self, index:) })
+          concat(step_wrapper(step, index) { render step.new(multistep_component: self, index:) })
         end
       end
     end
@@ -74,6 +75,6 @@ module Common
       steps.find_index(uncompleted_step)
     end
 
-    def current_step_index = first_incomplete_step_index
+    def current_step_index = previous_step_index + (previous_step_completed? ? 1 : 0)
   end
 end
