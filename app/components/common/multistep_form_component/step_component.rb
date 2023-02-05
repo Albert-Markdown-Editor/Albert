@@ -12,24 +12,24 @@ module Common
       end
     end
 
-    attr_reader :multistep_form, :index, :form
+    attr_reader :multistep_component, :index, :form
 
-    def initialize(multistep_form:, index:, html_attributes: {})
+    def initialize(multistep_component:, index:, html_attributes: {})
       @index = index
-      @form = multistep_form.form
-      @multistep_form = multistep_form
+      @form = multistep_component.form
+      @multistep_component = multistep_component
       super(html_attributes:)
     end
 
     def call
       raise "
-        #{self.class.name} is a StepComponent. StepComponents is abstract by default.
+        #{self.class.name} is a StepComponent. StepComponents are abstract by default.
         Components inheriting from it must define its own template or call method.
       "
     end
 
-    def current_step? = index == multistep_form.current_step
+    def current_step? = index == multistep_component.current_step
 
-    def completed? = self.class.completed?(@multistep_form.form.object)
+    def completed? = self.class.completed?(multistep_component.form.object)
   end
 end
