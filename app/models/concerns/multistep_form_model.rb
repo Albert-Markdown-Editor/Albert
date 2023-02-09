@@ -13,7 +13,7 @@ module MultistepFormModel
   extend ActiveSupport::Concern
 
   included do
-    attr_accessor :current_step, :total_steps
+    attr_accessor :current_step, :total_steps, :latest_step
 
     validate :all_multistep_form_steps_completed,
       if: -> { current_step.present? && total_steps.present? }

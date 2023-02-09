@@ -83,6 +83,8 @@
     <orderEntry type="library" scope="PROVIDED" name="method_source (v1.0.0, rbenv: 3.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mini_mime (v1.1.2, rbenv: 3.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="minitest (v5.17.0, rbenv: 3.1.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="minitest-rails (v7.0.0, rbenv: 3.1.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="minitest-rails-capybara (v0.0.2, rbenv: 3.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="msgpack (v1.6.0, rbenv: 3.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="net-imap (v0.3.4, rbenv: 3.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="net-pop (v0.1.2, rbenv: 3.1.2) [gem]" level="application" />
@@ -99,6 +101,7 @@
     <orderEntry type="library" scope="PROVIDED" name="rack (v2.2.6.2, rbenv: 3.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-test (v2.0.2, rbenv: 3.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rails (v7.0.4.2, rbenv: 3.1.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rails-controller-testing (v1.0.5, rbenv: 3.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rails-dom-testing (v2.0.3, rbenv: 3.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rails-html-sanitizer (v1.5.0, rbenv: 3.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="railties (v7.0.4.2, rbenv: 3.1.2) [gem]" level="application" />
@@ -171,6 +174,17 @@
         <option value="mailbox" />
         <option value="mailer" />
         <option value="migration" />
+        <option value="minitest:controller" />
+        <option value="minitest:generator" />
+        <option value="minitest:helper" />
+        <option value="minitest:install" />
+        <option value="minitest:integration" />
+        <option value="minitest:job" />
+        <option value="minitest:mailer" />
+        <option value="minitest:model" />
+        <option value="minitest:plugin" />
+        <option value="minitest:scaffold" />
+        <option value="minitest:system" />
         <option value="model" />
         <option value="preview:component" />
         <option value="resource" />
@@ -216,6 +230,17 @@
         <option value="mailbox" />
         <option value="mailer" />
         <option value="migration" />
+        <option value="minitest:controller" />
+        <option value="minitest:generator" />
+        <option value="minitest:helper" />
+        <option value="minitest:install" />
+        <option value="minitest:integration" />
+        <option value="minitest:job" />
+        <option value="minitest:mailer" />
+        <option value="minitest:model" />
+        <option value="minitest:plugin" />
+        <option value="minitest:scaffold" />
+        <option value="minitest:system" />
         <option value="model" />
         <option value="preview:component" />
         <option value="resource" />

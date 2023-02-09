@@ -14,6 +14,7 @@ module Common
       @form_url = form_url
       @back_url = back_url
       @model = model
+      clear_next_steps_errors
       super(html_attributes:)
     end
 
@@ -21,8 +22,9 @@ module Common
       form_with(form_url:, model: model, **wrapper_attributes) do |form|
         @form = form
 
-        concat(form.hidden_field(:current_step))
-        concat(form.hidden_field(:total_steps))
+        concat(form.hidden_field(:total_steps, value: steps.count))
+        concat(form.hidden_field(:latest_step, value: latest_step_index))
+        concat(form.hidden_field(:current_step, value: current_step_index))
 
         steps.each_with_index do |step, index|
           concat(step_wrapper(step, index) { render step.new(multistep_component: self, index:) })
@@ -75,6 +77,36 @@ module Common
       steps.find_index(uncompleted_step)
     end
 
-    def current_step_index = previous_step_index + (previous_step_completed? ? 1 : 0)
+    def current_step_index
+      @current_step_index =
+        if model.current_step.nil?
+          0
+        else
+          previous_step_index + (previous_step_completed? ? 1 : 0)
+        end
+    end
+
+    def latest_step_index
+      @latest_step_index =
+        if model.latest_step.nil?
+          0
+        else
+          [current_step_index, model.latest_step].max
+        end
+    end
+
+    def clear_current_step_error
+      return if model.errors.blank?
+
+      model.errors.delete(MultistepFormModel::ERROR_ATTRIBUTE)
+    end
+
+    def clear_next_steps_errors
+      return if model.errors.blank?
+
+      (steps[(latest_step_index + 1)..] || []).each do |step|
+        step.input_attributes.each { |k| model.errors.delete(k) }
+      end
+    end
   end
 end
