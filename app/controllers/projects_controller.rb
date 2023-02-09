@@ -23,6 +23,8 @@ class ProjectsController < ApplicationController
 
     if(@project.save)
       redirect_to project_path(@project), notice: "Project created"
+    else
+      response.status = :unprocessable_entity
     end
   end
 

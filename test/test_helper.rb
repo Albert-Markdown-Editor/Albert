@@ -4,10 +4,8 @@ ENV["RAILS_ENV"] ||= "test"
 # ---------------------
 require_relative "../config/environment"
 require "rails/test_help"
-
-# Gem Test Helpers
-# ================
-#
+require "capybara/minitest"
+require "capybara/rails"
 
 # Monkeypatches default +ActiveSupport::TestCase+ with additional
 # configuration  and helper methods you can use in your tests
@@ -20,6 +18,8 @@ class ActiveSupport::TestCase
 end
 
 class ActionDispatch::IntegrationTest
+  include Capybara::DSL
+
   # Inspired on https://github.com/rails/rails-controller-testing
   # Allows to check controller assignments during a request
   def assigns(key = nil)
