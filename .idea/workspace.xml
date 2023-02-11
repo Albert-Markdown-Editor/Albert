@@ -4,18 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="progress: next steps error handling">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/common/multistep_form_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/multistep_form_component.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/projects/new_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/projects/new_component.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/components/previews/projects/new_component_preview.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/components/previews/projects/new_component_preview.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/projects_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/projects_controller_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/system/components/common/multistep_form_component_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/components/common/multistep_form_component_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/system/components/common/tailwind_preview_component_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/components/common/tailwind_preview_component_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/system/components/layout/application_layout_component_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/components/layout/application_layout_component_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/system/components/projects/index_component_test.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/system/components/projects/new_component_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/components/projects/new_component_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/system/components/sample_component_test.rb" beforeDir="false" />
+    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="progress: test coverage">
+      <change beforePath="$PROJECT_DIR$/app/components/application_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/application_component.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/common/projects/form_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/projects/form_component.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/common/projects/form_component/project_deliverables_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/projects/form_component/project_deliverables_component.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/common/projects/form_component/project_details_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/projects/form_component/project_details_component.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/editor/documents_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/editor/documents_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/projects_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/projects_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/new_framework_defaults_7_0.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/new_framework_defaults_7_0.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -281,14 +277,7 @@
       <workItem from="1674989820344" duration="19306000" />
       <workItem from="1675446739489" duration="78000" />
       <workItem from="1675446865156" duration="19393000" />
-      <workItem from="1676061435380" duration="3833000" />
-    </task>
-    <task id="LOCAL-00068" summary="Add preview for application component">
-      <created>1662813903140</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1662813903140</updated>
+      <workItem from="1676061435380" duration="4411000" />
     </task>
     <task id="LOCAL-00069" summary="Add translations to layout">
       <created>1662816717977</created>
@@ -626,7 +615,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675966641496</updated>
     </task>
-    <option name="localTasksCounter" value="117" />
+    <task id="LOCAL-00117" summary="progress: test coverage">
+      <created>1676119950474</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1676119950475</updated>
+    </task>
+    <option name="localTasksCounter" value="118" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -652,7 +648,6 @@
     <MESSAGE value="progress: adjust fixtures" />
     <MESSAGE value="progress: project deliverables view" />
     <MESSAGE value="chore: rename name to title for BlogPost &amp; Book" />
-    <MESSAGE value="progress: test coverage" />
     <MESSAGE value="progress: view based kinds enum compulsory" />
     <MESSAGE value="progress: improve view model concern &amp; test coverage" />
     <MESSAGE value="progress: deliverables filters, views &amp; test coverage" />
@@ -669,7 +664,8 @@
     <MESSAGE value="progress: multistep form navigation" />
     <MESSAGE value="chore: refactoring" />
     <MESSAGE value="progress: next steps error handling" />
-    <option name="LAST_COMMIT_MESSAGE" value="progress: next steps error handling" />
+    <MESSAGE value="progress: test coverage" />
+    <option name="LAST_COMMIT_MESSAGE" value="progress: test coverage" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Albert@Development__Albert_Template.rcov" NAME="Development: Albert-Template Coverage Results" MODIFIED="1676062557597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Albert-Template" />

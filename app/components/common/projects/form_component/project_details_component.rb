@@ -13,7 +13,9 @@ module Common
         concat(
           tag.div(class: "flex flex-col gap-2") do
             concat(form.label(:name, "Project Name", class: "text-sm"))
-            concat(form.text_field(:name, class: "px-2 py-1 outline-none border-b-2 border-zinc-300 hover:border-slate-500 focus:border-slate-500"))
+            concat(form.text_field(:name, class: "
+              px-2 py-1 outline-none border-b-2 border-zinc-300 hover:border-slate-500 focus:border-slate-500
+            "))
             form.object.errors.full_messages_for(:name).each do |m|
               concat(tag.p(m, class: "text-sm text-red-500"))
             end
@@ -22,7 +24,9 @@ module Common
         concat(
           tag.div(class: "mt-5 flex flex-col gap-2") do
             concat(form.label(:description, "Description", class: "text-sm"))
-            concat(form.text_field(:description, class: "px-2 py-1 outline-none border-b-2 border-zinc-300 hover:border-slate-500 focus:border-slate-500"))
+            concat(form.text_field(:description, class: "
+              px-2 py-1 outline-none border-b-2 border-zinc-300 hover:border-slate-500 focus:border-slate-500
+            "))
             form.object.errors.full_messages_for(:description) do |m|
               concat(tag.p(m, class: "text-sm text-red-500"))
             end
