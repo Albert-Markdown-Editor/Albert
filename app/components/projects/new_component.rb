@@ -10,7 +10,12 @@ module Projects
     end
 
     def call
-      render Common::Projects::FormComponent.new(form_url: projects_path(project), back_url: projects_path, model: project)
+      render Common::Projects::FormComponent.new(
+        form_url: projects_path(project),
+        back_url: projects_path,
+        model: project,
+        html_attributes: wrapper_attributes
+      )
     end
   end
 end

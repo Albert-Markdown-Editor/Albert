@@ -19,7 +19,7 @@ module Common
     end
 
     def call
-      form_with(form_url:, model: model, **wrapper_attributes) do |form|
+      form_with(url: form_url, model: model, **wrapper_attributes) do |form|
         @form = form
 
         concat(form.hidden_field(:total_steps, value: steps.count))
@@ -60,29 +60,19 @@ module Common
       end
     end
 
-    def previous_step_index
-      model.current_step.blank? ? 0 : model.current_step.to_i
-    end
-
-    def previous_step_completed?
-      steps[previous_step_index]&.completed?(model)
-    end
-
-    def first_incomplete_step_index
-      steps.find_index { |s| !s.completed?(model) } || 0
-    end
-
-    def previous_step_next_incompleted_step_index
-      uncompleted_step = steps[previous_step_index..].find { |s| s.completed?(model) }
-      steps.find_index(uncompleted_step)
+    def first_incompleted_step_index
+      steps.find_index { |s| !s.completed?(model) }
     end
 
     def current_step_index
+      previous_step = model.current_step&.to_i
+
       @current_step_index =
         if model.current_step.nil?
           0
         else
-          previous_step_index + (previous_step_completed? ? 1 : 0)
+          next_step = previous_step + (steps[previous_step].completed?(model) ? 1 : 0)
+          [next_step, first_incompleted_step_index].compact.min
         end
     end
 

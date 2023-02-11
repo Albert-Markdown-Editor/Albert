@@ -34,6 +34,6 @@ class MultistepFormModelTest < ActiveSupport::TestCase
     refute @model.valid?
 
     assert_equal @model.errors.first.attribute, MultistepFormModel::ERROR_ATTRIBUTE
-    assert_equal @model.errors.first.detail, MultistepFormModel::ERROR_DETAIL
+    assert_equal @model.errors.first.detail[:error], MultistepFormModel::ERROR_DETAIL
   end
 end

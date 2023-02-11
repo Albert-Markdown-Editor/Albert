@@ -4,25 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="chore: refactoring">
-      <change afterPath="$PROJECT_DIR$/test/component_test_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/components/previews/common/projects/form_component_preview.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/components/previews/projects/index_component_preview.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/components/previews/projects/new_component_preview.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/system/components/common/multistep_form_component_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/system/components/projects/index_component_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/system/components/projects/new_component_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Albert-Template.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Albert-Template.iml" afterDir="false" />
+    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="progress: next steps error handling">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/common/multistep_form_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/multistep_form_component.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/projects_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/projects_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/concerns/multistep_form_model.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/concerns/multistep_form_model.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/application_system_test_case.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/application_system_test_case.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/channels/application_cable/connection_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/channels/application_cable/connection_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/projects/new_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/projects/new_component.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/components/previews/projects/new_component_preview.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/components/previews/projects/new_component_preview.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/controllers/projects_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/projects_controller_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/system/components/common/multistep_form_component_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/components/common/multistep_form_component_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/system/components/common/tailwind_preview_component_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/components/common/tailwind_preview_component_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/system/components/layout/application_layout_component_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/components/layout/application_layout_component_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/system/components/projects/index_component_test.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/system/components/projects/new_component_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/components/projects/new_component_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/system/components/sample_component_test.rb" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,29 +90,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "js.linters.configure.manually.selectedeslint": "true",
-    "last_opened_file_path": "/Users/alberto-mac/Desktop/Projects/Albert/Albert/test/system/components/projects",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "/Users/alberto-mac/Desktop/Projects/Albert/Albert-Template/node_modules/eslint",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/alberto-mac/Desktop/Projects/Albert/Albert-Template/node_modules/prettier",
-    "ruby.rails.projectView.checked": "true",
-    "ruby.structure.view.model.defaults.configured": "true",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "vcs.Git",
-    "ts.external.directory.path": "/Applications/RubyMine.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/alberto-mac/Desktop/Projects/Albert/Albert/test/system/components/projects&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;/Users/alberto-mac/Desktop/Projects/Albert/Albert-Template/node_modules/eslint&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/alberto-mac/Desktop/Projects/Albert/Albert-Template/node_modules/prettier&quot;,
+    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
+    &quot;ruby.structure.view.model.defaults.configured&quot;: &quot;true&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/RubyMine.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/test/system/components/projects" />
@@ -129,11 +122,11 @@
       <recent name="$PROJECT_DIR$/test/system/components/common" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test/components" />
       <recent name="$PROJECT_DIR$/app/models" />
       <recent name="$PROJECT_DIR$/test/models/concerns/filters" />
       <recent name="$PROJECT_DIR$/test/models" />
       <recent name="$PROJECT_DIR$/app/assets/stylesheets/base" />
-      <recent name="$PROJECT_DIR$/app/assets/stylesheets" />
     </key>
   </component>
   <component name="RubyModuleManagerSettings">
@@ -287,14 +280,8 @@
       <workItem from="1674937535104" duration="3199000" />
       <workItem from="1674989820344" duration="19306000" />
       <workItem from="1675446739489" duration="78000" />
-      <workItem from="1675446865156" duration="18109000" />
-    </task>
-    <task id="LOCAL-00067" summary="Set up new editor document controller and routes.">
-      <created>1662809972874</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1662809972874</updated>
+      <workItem from="1675446865156" duration="19393000" />
+      <workItem from="1676061435380" duration="3833000" />
     </task>
     <task id="LOCAL-00068" summary="Add preview for application component">
       <created>1662813903140</created>
@@ -632,7 +619,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675609329830</updated>
     </task>
-    <option name="localTasksCounter" value="116" />
+    <task id="LOCAL-00116" summary="progress: next steps error handling">
+      <created>1675966641496</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1675966641496</updated>
+    </task>
+    <option name="localTasksCounter" value="117" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -650,7 +644,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Implemented model filter logic and basic filter proxy tests" />
     <MESSAGE value="Add filter logic to models and controllers. Add test coverage." />
     <MESSAGE value="First implementation of the filter ready" />
     <MESSAGE value="Fixed linter issues and dependencies vulnerabilities" />
@@ -675,9 +668,10 @@
     <MESSAGE value="progress: nested form" />
     <MESSAGE value="progress: multistep form navigation" />
     <MESSAGE value="chore: refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: refactoring" />
+    <MESSAGE value="progress: next steps error handling" />
+    <option name="LAST_COMMIT_MESSAGE" value="progress: next steps error handling" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Albert@Development__Albert_Template.rcov" NAME="Development: Albert-Template Coverage Results" MODIFIED="1675704513558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Albert-Template" />
+    <SUITE FILE_PATH="coverage/Albert@Development__Albert_Template.rcov" NAME="Development: Albert-Template Coverage Results" MODIFIED="1676062557597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Albert-Template" />
   </component>
 </project>
