@@ -13,28 +13,28 @@ class ProjectsController < ApplicationController
     @projects = filter(@projects)
   end
 
-  # GET /projects/new
-  def new
+  # GET /projects/<project_name>
+  def show
+    redirect_to_url_with_active_slug if request_with_deprecated_slug?
   end
 
-  # POST /projects
-  def create
-    @project = Project.new(project_params)
-
-    if(@project.save)
-      redirect_to project_path(@project), notice: "Project created"
-    else
-      response.status = :unprocessable_entity
-    end
+  # GET /projects/new
+  def new
   end
 
   # GET /projects/<project_name>/edit
   def edit
   end
 
-  # GET /projects/<project_name>
-  def show
-    redirect_to_url_with_active_slug if request_with_deprecated_slug?
+  # POST /projects
+  def create
+    @project = Project.new(project_params)
+
+    if @project.save
+      redirect_to(project_path(@project), notice: "Project created") # rubocop:disable Rails/I18nLocaleTexts
+    else
+      response.status = :unprocessable_entity
+    end
   end
 
   private
@@ -52,6 +52,6 @@ class ProjectsController < ApplicationController
   def project_params
     params
       .require(:project)
-      .permit(:name, :description, :total_steps, :current_step, books_attributes: [:title, :description])
+      .permit(:name, :description, :total_steps, :current_step, books_attributes: %i[title description])
   end
 end

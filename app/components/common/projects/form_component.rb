@@ -39,9 +39,15 @@ module Common
             concat(
               tag.div(class: "mt-5 w-full inline-flex gap-2 items-center justify-end") do
                 concat(link_to("cancel", back_url, class: "px-4 py-2 bg-zinc-500 text-white")) if index == 0
-                concat(tag.label("previous", for: radio_id(index - 1), class: "px-4 py-2 bg-zinc-500 text-white")) if index > 0
-                concat(form.submit("next", class: "cursor-pointer px-4 py-2 bg-zinc-500 text-white")) if index < (steps.count - 1)
-                concat(form.submit("create project", class: "cursor-pointer px-4 py-2 bg-zinc-500 text-white")) if index == (steps.count - 1)
+                if index > 0
+                  concat(tag.label("previous", for: radio_id(index - 1), class: "px-4 py-2 bg-zinc-500 text-white"))
+                end
+                if index < (steps.count - 1)
+                  concat(form.submit("next", class: "cursor-pointer px-4 py-2 bg-zinc-500 text-white"))
+                end
+                if index == (steps.count - 1)
+                  concat(form.submit("create project", class: "cursor-pointer px-4 py-2 bg-zinc-500 text-white"))
+                end
               end
             )
           end
