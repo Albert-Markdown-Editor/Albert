@@ -93,18 +93,6 @@ class ProjectsControllerTest < ControllerTestHelper
     end
   end
 
-  test "POST create does not create a new project if data is invalid" do
-    project_payload = { project: FactoryBot.attributes_for(:project) }
-
-    project_payload[:project][:name] = nil
-
-    refute Project.new(**project_payload.dig(:project)).valid?
-
-    assert_no_changes -> { Project.count } do
-      post projects_path(project_payload)
-    end
-  end
-
   test "POST create redirects to created project show page if project is created" do
     project_payload = { project: FactoryBot.attributes_for(:project) }
 
@@ -116,6 +104,18 @@ class ProjectsControllerTest < ControllerTestHelper
 
     assert_response :redirect
     assert_redirected_to project_path(result)
+  end
+
+  test "POST create does not create a new project if data is invalid" do
+    project_payload = { project: FactoryBot.attributes_for(:project) }
+
+    project_payload[:project][:name] = nil
+
+    refute Project.new(**project_payload.dig(:project)).valid?
+
+    assert_no_changes -> { Project.count } do
+      post projects_path(project_payload)
+    end
   end
 
   test "POST create renders create view if project is not created" do
