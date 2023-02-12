@@ -4,22 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="progress: layout components">
-      <change afterPath="$PROJECT_DIR$/app/assets/images/icons/bookmark.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/icons/cog.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/icons/folder.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/icons/newspaper.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/icons/starts.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/component_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/initializers/inline_svg.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/components/previews/common/icon_component_preview.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/components/previews/common/icon_component_preview/icons.html.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Albert-Template.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Albert-Template.iml" afterDir="false" />
+    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="fix: preview">
+      <change afterPath="$PROJECT_DIR$/test/components/common/icon_component_test.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/icons/edit.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/icons/edit.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/common/icon_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/icon_component.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +87,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "js.linters.configure.manually.selectedeslint": "true",
-    "last_opened_file_path": "/Users/alberto-mac/Desktop/Projects/Albert/Albert/app/helpers",
+    "last_opened_file_path": "/Users/alberto-mac/Desktop/Projects/Albert/Albert/test/components/common",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -119,11 +106,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test/components/common" />
       <recent name="$PROJECT_DIR$/app/helpers" />
       <recent name="$PROJECT_DIR$/app/components/common/layout" />
       <recent name="$PROJECT_DIR$/test/system/components/projects" />
       <recent name="$PROJECT_DIR$/test/components/previews/common/projects/form_component" />
-      <recent name="$PROJECT_DIR$/test/components/previews/common/projects" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/test/components/previews/common" />
@@ -286,20 +273,6 @@
       <workItem from="1675446739489" duration="78000" />
       <workItem from="1675446865156" duration="19393000" />
       <workItem from="1676061435380" duration="4411000" />
-    </task>
-    <task id="LOCAL-00070" summary="Add components, layout and previews for document editor">
-      <created>1662888430137</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1662888430137</updated>
-    </task>
-    <task id="LOCAL-00071" summary="Fixing Tailwind configuration">
-      <created>1662892655447</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1662892655447</updated>
     </task>
     <task id="LOCAL-00072" summary="Fix style import with TailwindCSS">
       <created>1663180221330</created>
@@ -630,7 +603,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676197350321</updated>
     </task>
-    <option name="localTasksCounter" value="119" />
+    <task id="LOCAL-00119" summary="progress: icon library with preview">
+      <created>1676224162874</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1676224162875</updated>
+    </task>
+    <task id="LOCAL-00120" summary="fix: preview">
+      <created>1676224305690</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1676224305690</updated>
+    </task>
+    <option name="localTasksCounter" value="121" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -648,8 +635,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="First implementation of the filter ready" />
-    <MESSAGE value="Fixed linter issues and dependencies vulnerabilities" />
     <MESSAGE value="progress: added book &amp; post model, and deliverables controller" />
     <MESSAGE value="progress: added deliverables views" />
     <MESSAGE value="progress: adjust fixtures" />
@@ -673,9 +658,11 @@
     <MESSAGE value="progress: next steps error handling" />
     <MESSAGE value="progress: test coverage" />
     <MESSAGE value="progress: layout components" />
-    <option name="LAST_COMMIT_MESSAGE" value="progress: layout components" />
+    <MESSAGE value="progress: icon library with preview" />
+    <MESSAGE value="fix: preview" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: preview" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Albert@Development__Albert_Template.rcov" NAME="Development: Albert-Template Coverage Results" MODIFIED="1676224006083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Albert-Template" />
+    <SUITE FILE_PATH="coverage/Albert@Development__Albert_Template.rcov" NAME="Development: Albert-Template Coverage Results" MODIFIED="1676224278482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Albert-Template" />
   </component>
 </project>
