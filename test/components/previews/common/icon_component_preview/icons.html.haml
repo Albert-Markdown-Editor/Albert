@@ -1,0 +1,13 @@
+.grid.grid-cols-20.grid-flow-col.gap-4
+  - icons = Dir.glob("#{Rails.root}/app/assets/images/icons/**/*").map { |p| File.basename(p, ".*")  }
+  - size = local_assigns[:size]
+
+  - icons.sort.each do |icon|
+    - icon_helper = "icon_component(#{icon}, size: #{size})"
+
+    %button.group.p-4.flex.items-center.justify-center.rounded.cursor-pointer{ class: "hover:bg-gray-100 focus:bg-gray-200",
+                                                                               onclick: "navigator.clipboard.writeText('#{icon_helper}')" }
+      .flex.flex-col.gap-2.items-center.justify-center
+        = icon_component(icon:, size:)
+        %p.text-xs{ class: "group-focus:hidden" }= icon
+        %p.hidden.text-xs.font-bold{ class: "group-focus:block" } Copied to clipboard!
