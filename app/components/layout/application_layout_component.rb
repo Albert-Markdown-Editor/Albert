@@ -60,6 +60,12 @@ module Layout
       def call
         content_tag(:body, content, wrapper_attributes)
       end
+
+      def default_html_attributes
+        concat_html_attributes(super, {
+          class: "h-screen w-screen"
+        })
+      end
     end
 
     renders_one :head, Head
