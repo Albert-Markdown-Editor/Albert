@@ -5,10 +5,10 @@ class Common::IconComponentPreview < ViewComponent::Preview
   # Renders an `.svg` component from the icon assets library available
   # at `/assets/images/icons`. You can pass additional `HTML` parameters
   # to customize your icons the way you want
-
+  #
   # @param icon
   # @param size select { choices: [xs, sm, base, lg, xl] }
-  def default(icon: :edit, size:)
+  def default(icon: :edit, size: :xl)
     render Common::IconComponent.new(icon.to_sym, size:)
   end
 
