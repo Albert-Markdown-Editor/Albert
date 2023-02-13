@@ -111,7 +111,7 @@ GEM
     faker (3.1.0)
       i18n (>= 1.8.11, < 2)
     ffi (1.15.5)
-    friendly_id (5.4.2)
+    friendly_id (5.5.0)
       activerecord (>= 4.0.0)
     globalid (1.1.0)
       activesupport (>= 5.0)
@@ -277,7 +277,7 @@ GEM
       actionpack (>= 6.0.0)
       activejob (>= 6.0.0)
       railties (>= 6.0.0)
-    tzinfo (2.0.5)
+    tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.4.2)
     uniform_notifier (1.16.0)
@@ -319,7 +319,7 @@ DEPENDENCIES
   debug
   factory_bot_rails
   faker
-  friendly_id (~> 5.4.0)
+  friendly_id (~> 5.5.0)
   haml
   jbuilder
   jsbundling-rails
