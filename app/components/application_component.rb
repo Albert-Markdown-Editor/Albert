@@ -16,6 +16,7 @@ class ApplicationComponent < ViewComponent::Base
 
   attr_reader :wrapper_attributes
 
+  delegate_missing_to :helpers
   delegate :component_class, :default_html_attributes, to: :class
 
   def initialize(html_attributes: {})
