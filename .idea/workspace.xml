@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="fix: preview">
-      <change afterPath="$PROJECT_DIR$/test/components/common/icon_component_test.rb" afterDir="false" />
+    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="progress: tests for icon component">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/icons/starts.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/icons/stats.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/application_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/application_component.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/common/layout/sidebar_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/layout/sidebar_component.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -273,13 +275,6 @@
       <workItem from="1675446739489" duration="78000" />
       <workItem from="1675446865156" duration="19393000" />
       <workItem from="1676061435380" duration="4411000" />
-    </task>
-    <task id="LOCAL-00072" summary="Fix style import with TailwindCSS">
-      <created>1663180221330</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1663180221330</updated>
     </task>
     <task id="LOCAL-00073" summary="Add Tailwind Typography plugin">
       <created>1663181175696</created>
@@ -617,7 +612,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676224305690</updated>
     </task>
-    <option name="localTasksCounter" value="121" />
+    <task id="LOCAL-00121" summary="progress: tests for icon component">
+      <created>1676225358455</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1676225358455</updated>
+    </task>
+    <option name="localTasksCounter" value="122" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -635,7 +637,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="progress: added book &amp; post model, and deliverables controller" />
     <MESSAGE value="progress: added deliverables views" />
     <MESSAGE value="progress: adjust fixtures" />
     <MESSAGE value="progress: project deliverables view" />
@@ -660,7 +661,8 @@
     <MESSAGE value="progress: layout components" />
     <MESSAGE value="progress: icon library with preview" />
     <MESSAGE value="fix: preview" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: preview" />
+    <MESSAGE value="progress: tests for icon component" />
+    <option name="LAST_COMMIT_MESSAGE" value="progress: tests for icon component" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Albert@Development__Albert_Template.rcov" NAME="Development: Albert-Template Coverage Results" MODIFIED="1676224278482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Albert-Template" />
