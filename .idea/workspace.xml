@@ -4,17 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="progress: sidebar mockup">
-      <change afterPath="$PROJECT_DIR$/app/assets/images/icons/arrow-left.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/blogs/index_component.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/common/layout/page_content_component.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/components/previews/blogs/index_component_preview.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/components/previews/common/layout/page_content_component_preview.rb" afterDir="false" />
+    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="progress: layout">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/common/layout/page_body_component.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/common/layout/page_layout_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/layout/page_layout_component.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/common/layout/sidebar_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/layout/sidebar_component.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/components/previews/common/layout/page_layout_component_preview.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/components/previews/common/layout/page_layout_component_preview.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/blogs/index_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/blogs/index_component.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -281,13 +273,6 @@
       <workItem from="1675446739489" duration="78000" />
       <workItem from="1675446865156" duration="19393000" />
       <workItem from="1676061435380" duration="4411000" />
-    </task>
-    <task id="LOCAL-00074" summary="Add basic logic for document JS controlling">
-      <created>1663493856375</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1663493856376</updated>
     </task>
     <task id="LOCAL-00075" summary="Update gemfile.lock">
       <created>1663517748161</created>
@@ -625,7 +610,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676307449823</updated>
     </task>
-    <option name="localTasksCounter" value="123" />
+    <task id="LOCAL-00123" summary="progress: layout">
+      <created>1676909128275</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1676909128275</updated>
+    </task>
+    <option name="localTasksCounter" value="124" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -643,7 +635,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="progress: adjust fixtures" />
     <MESSAGE value="progress: project deliverables view" />
     <MESSAGE value="chore: rename name to title for BlogPost &amp; Book" />
     <MESSAGE value="progress: view based kinds enum compulsory" />
@@ -668,7 +659,8 @@
     <MESSAGE value="fix: preview" />
     <MESSAGE value="progress: tests for icon component" />
     <MESSAGE value="progress: sidebar mockup" />
-    <option name="LAST_COMMIT_MESSAGE" value="progress: sidebar mockup" />
+    <MESSAGE value="progress: layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="progress: layout" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Albert@Development__Albert_Template.rcov" NAME="Development: Albert-Template Coverage Results" MODIFIED="1676308702275" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Albert-Template" />
