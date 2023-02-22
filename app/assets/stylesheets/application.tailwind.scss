@@ -1,6 +1,13 @@
 @import "tailwindcss/base";
+
 @import "base/fonts.scss";
-@import "base/layout.scss";
+
+// Tippy.js styles
+@import "tippy.js/dist/tippy.css";
+
+@import 'tippy.js/animations/shift-away.css';
+@import 'tippy.js/animations/shift-away-subtle.css';
+@import 'tippy.js/animations/shift-away-extreme.css';
 
 @import "tailwindcss/components";
 

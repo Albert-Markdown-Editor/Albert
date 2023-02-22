@@ -3,6 +3,7 @@
 // Learn more about plugin needs:
 // https://tailwindcss.com/docs/using-with-preprocessors
 module.exports = {
+  syntax: 'postcss-scss',
   plugins: [
     // Easy importing of local, node or web CSS files
     // (!) SET THIS PLUGIN ALWAYS FIRST
