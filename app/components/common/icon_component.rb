@@ -6,18 +6,18 @@ module Common
     ICONS_ASSET_PATH = "icons/"
 
     SIZES = {
-      xs: "w-[12px]",
-      sm: "w-[14px]",
-      base: "w-[16px]",
-      lg: "w-[18px]",
-      xl: "w-[20px]",
+      xs: "xs",
+      sm: "sm",
+      base: "base",
+      lg: "lg",
+      xl: "xl",
     }.freeze
 
     attr_reader :icon, :size
 
     def initialize(icon, size: :base, html_attributes: {})
       @icon = icon
-      @size = size
+      @size = SIZES[size.to_sym]
       super(html_attributes:)
     end
 
@@ -26,8 +26,17 @@ module Common
     end
 
     def default_html_attributes
+      size_classes = "
+        data-[size=xs]:w-[12px] data-[size=xs]:h-[12px]
+        data-[size=sm]:w-[16px] data-[size=sm]:h-[16px]
+        data-[size=base]:w-[20px] data-[size=base]:h-[20px]
+        data-[size=lg]:w-[22px] data-[size=lg]:h-[22px]
+        data-[size=xl]:w-[28px] data-[size=xl]:h-[28px]
+      "
+
       concat_html_attributes(super, {
-        class: SIZES[size.to_sym],
+        class: size_classes,
+        data: { size: },
 
         # https://github.com/jamesmartin/inline_svg#accessibility
         aria: true,

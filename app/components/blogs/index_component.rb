@@ -20,9 +20,7 @@ module Blogs
           page_content.body do
             render(Common::Layout::PageContentComponent.new(title:, subtitle:, back_url:, back_label:)) do |component|
               component.with_right_content do
-                tag.div(class: "px-6 py-3 bg-gray-600 hover:bg-gray-800 transition-colors duration-400 text-white cursor-pointer") do
-                  tag.p("Create new Blog", class: "text-sm")
-                end
+                button_component(label: "Create New Blog", icon: "plus")
               end
 
               component.body do
