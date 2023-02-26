@@ -4,38 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="progress: layout">
-      <change afterPath="$PROJECT_DIR$/app/components/common/button_component.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/common/dropdown_component.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/common/icon_button_component.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/common/tooltip_component.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/concerns/with_stimulus_controller_component.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/html_attribute_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/components/common/button_component_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/components/common/icon_button_component_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/components/previews/common/button_component_preview.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/components/previews/common/icon_button_component_preview.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/components/previews/common/popover_component_preview.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/components/previews/common/tooltip_component_preview.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
+    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="progress: button components">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/builds/.keep" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/popover_component.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.tailwind.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.tailwind.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/base/editor.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/base/layout.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/components/editable_document_fragment.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/popover_component/popover_component_controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/application_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/application_component.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/blogs/index_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/blogs/index_component.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/common/icon_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/icon_component.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/component_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/component_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Procfile.dev" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile.dev" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/javascript/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/application.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/javascript/controllers/application.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/javascript/controllers/index.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/babel.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/babel.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/esbuild.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/esbuild.config.mjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postcss.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,29 +85,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "js.linters.configure.manually.selectedeslint": "true",
-    "last_opened_file_path": "/Users/alberto-mac/Desktop/Projects/Albert/Albert/test/components/common",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "/Users/alberto-mac/Desktop/Projects/Albert/Albert-Template/node_modules/eslint",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/alberto-mac/Desktop/Projects/Albert/Albert-Template/node_modules/prettier",
-    "ruby.rails.projectView.checked": "true",
-    "ruby.structure.view.model.defaults.configured": "true",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/Applications/RubyMine.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/alberto-mac/Desktop/Projects/Albert/Albert/test/components/common&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;/Users/alberto-mac/Desktop/Projects/Albert/Albert-Template/node_modules/eslint&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/alberto-mac/Desktop/Projects/Albert/Albert-Template/node_modules/prettier&quot;,
+    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
+    &quot;ruby.structure.view.model.defaults.configured&quot;: &quot;true&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/RubyMine.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/test/components/common" />
@@ -142,11 +117,11 @@
       <recent name="$PROJECT_DIR$/app/helpers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/config" />
       <recent name="$PROJECT_DIR$/test/components/previews/common" />
       <recent name="$PROJECT_DIR$/test/components" />
       <recent name="$PROJECT_DIR$/app/models" />
-      <recent name="$PROJECT_DIR$/test/models/concerns/filters" />
-      <recent name="$PROJECT_DIR$/test/models" />
     </key>
   </component>
   <component name="RubyModuleManagerSettings">
@@ -302,13 +277,7 @@
       <workItem from="1675446739489" duration="78000" />
       <workItem from="1675446865156" duration="19393000" />
       <workItem from="1676061435380" duration="4411000" />
-    </task>
-    <task id="LOCAL-00075" summary="Update gemfile.lock">
-      <created>1663517748161</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1663517748161</updated>
+      <workItem from="1677338592777" duration="5929000" />
     </task>
     <task id="LOCAL-00076" summary="Update NPM package">
       <created>1663518086283</created>
@@ -646,7 +615,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676909128275</updated>
     </task>
-    <option name="localTasksCounter" value="124" />
+    <task id="LOCAL-00124" summary="progress: button components">
+      <created>1677057420100</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1677057420100</updated>
+    </task>
+    <option name="localTasksCounter" value="125" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -664,7 +640,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="progress: project deliverables view" />
     <MESSAGE value="chore: rename name to title for BlogPost &amp; Book" />
     <MESSAGE value="progress: view based kinds enum compulsory" />
     <MESSAGE value="progress: improve view model concern &amp; test coverage" />
@@ -689,9 +664,10 @@
     <MESSAGE value="progress: tests for icon component" />
     <MESSAGE value="progress: sidebar mockup" />
     <MESSAGE value="progress: layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="progress: layout" />
+    <MESSAGE value="progress: button components" />
+    <option name="LAST_COMMIT_MESSAGE" value="progress: button components" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Albert@Development__Albert_Template.rcov" NAME="Development: Albert-Template Coverage Results" MODIFIED="1677057153458" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Albert-Template" />
+    <SUITE FILE_PATH="coverage/Albert@Development__Albert_Template.rcov" NAME="Development: Albert-Template Coverage Results" MODIFIED="1677057214362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Albert-Template" />
   </component>
 </project>

@@ -20,6 +20,16 @@ esbuild
     chunkNames: 'chunks/[name]-[hash]',
     // Remove unused JS methods
     treeShaking: true,
+    // Adds mapping information so web browser console can map bundle errors to the corresponding
+    // code line and column in the real code
+    // More information: https://esbuild.github.io/api/#sourcemap
+    sourcemap: process.argv.includes('--development'),
+    // Compresses bundle
+    // More information: https://esbuild.github.io/api/#minify
+    minify: process.argv.includes('--production'),
+    // Removes all console lines from bundle
+    // More information: https://esbuild.github.io/api/#drop
+    drop: process.argv.includes('--production') ? ['console'] : [],
     // Build command log output: https://esbuild.github.io/api/#log-level
     logLevel: 'info',
     // Set of ESLint plugins

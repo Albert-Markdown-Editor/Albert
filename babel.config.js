@@ -1,6 +1,8 @@
 const presets = [
   [
+    // Javascript 2015+ syntax transpiler
     '@babel/preset-env',
+    // Javascript Polyfill
     {
       useBuiltIns: 'usage',
       corejs: '3.28.0'

@@ -16,7 +16,7 @@
     "build:esbuild": "node esbuild.config.mjs",
     "build:tailwind": "npx tailwindcss --postcss -i ./app/assets/stylesheets/application.tailwind.scss -o ./app/assets/builds/application.css -c ./config/tailwind.config.js --minify",
     "build:tailwind-config-viewer": "tailwind-config-viewer export ./public/tailwind-config-viewer -c ./config/tailwind.config.js",
-    "build": "yarn build:esbuild",
+    "build": "yarn build:esbuild --production",
     "build:css": "yarn build:tailwind-config-viewer && yarn build:tailwind",
     "build:dev": "yarn build:tailwind-config-viewer && yarn build:tailwind && yarn build:esbuild"
   },

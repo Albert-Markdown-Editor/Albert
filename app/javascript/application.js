@@ -1,7 +1,7 @@
 // Entry point for the build script in your package.json
 import '@hotwired/turbo-rails'
 import { Application } from '@hotwired/stimulus'
-import Hello_controller from './controllers/hello_controller'
+
 // General Controllers
 // -------------------
 import controllers from './**/*_controller.js'
@@ -9,7 +9,6 @@ import controllers from './**/*_controller.js'
 // Component Controllers
 // ---------------------
 import componentControllers from './../components/**/*_controller.js'
-import hello_controller from './controllers/hello_controller'
 
 // Auxiliary Methods
 // -----------------
