@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="progress:everything ready">
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="fix: linter">
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn-error.log" beforeDir="false" afterPath="$PROJECT_DIR$/yarn-error.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -283,14 +281,7 @@
       <workItem from="1679066119409" duration="136000" />
       <workItem from="1679066269260" duration="1255000" />
       <workItem from="1679068734530" duration="541000" />
-      <workItem from="1679907699428" duration="404000" />
-    </task>
-    <task id="LOCAL-00078" summary="Basic routing for documents configured">
-      <created>1664126148517</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1664126148517</updated>
+      <workItem from="1679907699428" duration="722000" />
     </task>
     <task id="LOCAL-00079" summary="Progress">
       <created>1664999081791</created>
@@ -628,7 +619,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679907744221</updated>
     </task>
-    <option name="localTasksCounter" value="127" />
+    <task id="LOCAL-00127" summary="fix: linter">
+      <created>1679908774795</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1679908774795</updated>
+    </task>
+    <option name="localTasksCounter" value="128" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -646,7 +644,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="progress: improve view model concern &amp; test coverage" />
     <MESSAGE value="progress: deliverables filters, views &amp; test coverage" />
     <MESSAGE value="Fix: view kind parser" />
     <MESSAGE value="Fix: project deliverables filter form" />
@@ -671,7 +668,8 @@
     <MESSAGE value="progress: button components" />
     <MESSAGE value="progress: esbuild &amp; babel refinements" />
     <MESSAGE value="progress:everything ready" />
-    <option name="LAST_COMMIT_MESSAGE" value="progress:everything ready" />
+    <MESSAGE value="fix: linter" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: linter" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Albert@Development__Albert_Template.rcov" NAME="Development: Albert-Template Coverage Results" MODIFIED="1679066653304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Albert-Template" />
