@@ -37,7 +37,7 @@ module Common
 
         def default_html_attributes
           concat_html_attributes(super, {
-            class: "flex-1 flex flex-col gap-6 px-10"
+            class: "flex-1 flex flex-col gap-6 px-10",
           })
         end
       end
@@ -53,7 +53,7 @@ module Common
 
       def default_html_attributes
         concat_html_attributes(super, {
-          class: "h-full w-full inline-flex py-4 pr-6"
+          class: "h-full w-full inline-flex py-4 pr-6",
         })
       end
     end

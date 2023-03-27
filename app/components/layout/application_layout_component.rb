@@ -63,7 +63,7 @@ module Layout
 
       def default_html_attributes
         concat_html_attributes(super, {
-          class: "h-screen w-screen"
+          class: "h-screen w-screen",
         })
       end
     end

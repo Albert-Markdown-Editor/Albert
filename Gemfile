@@ -65,7 +65,7 @@ gem "haml"
 # ViewComponent gem - encapsulated reusable components
 gem "view_component"
 # Previsualization of ViewComponents
-gem "lookbook"
+gem "lookbook" , "~> 2.0.0.beta.8"
 gem "inline_svg" , "~> 1.8.0"
 
 # Markdown - HTML Parser

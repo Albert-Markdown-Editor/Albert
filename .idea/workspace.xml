@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="progress: esbuild &amp; babel refinements">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/application_component.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/application_component.rb" afterDir="false" />
+    <list default="true" id="78b643cb-2c76-4a97-bce1-93374571b6d4" name="Changes" comment="progress:everything ready">
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn-error.log" beforeDir="false" afterPath="$PROJECT_DIR$/yarn-error.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +20,9 @@
         <option value="package.json" />
       </list>
     </option>
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="main" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -81,29 +85,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "js.linters.configure.manually.selectedeslint": "true",
-    "last_opened_file_path": "/Users/alberto-mac/Desktop/Projects/Albert/Albert/test/components/common",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "/Users/alberto-mac/Desktop/Projects/Albert/Albert-Template/node_modules/eslint",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/alberto-mac/Desktop/Projects/Albert/Albert-Template/node_modules/prettier",
-    "ruby.rails.projectView.checked": "true",
-    "ruby.structure.view.model.defaults.configured": "true",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "com.github.copilot.settings.ApplicationConfigurable",
-    "ts.external.directory.path": "/Applications/RubyMine.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/alberto-mac/Desktop/Projects/Albert/Albert/test/components/common&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;/Users/alberto-mac/Desktop/Projects/Albert/Albert-Template/node_modules/eslint&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/alberto-mac/Desktop/Projects/Albert/Albert-Template/node_modules/prettier&quot;,
+    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
+    &quot;ruby.structure.view.model.defaults.configured&quot;: &quot;true&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.github.copilot.settings.ApplicationConfigurable&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/RubyMine.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/test/components/common" />
@@ -279,13 +283,7 @@
       <workItem from="1679066119409" duration="136000" />
       <workItem from="1679066269260" duration="1255000" />
       <workItem from="1679068734530" duration="541000" />
-    </task>
-    <task id="LOCAL-00077" summary="Add Project model and basic association between Project and Document">
-      <created>1664124475023</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1664124475024</updated>
+      <workItem from="1679907699428" duration="404000" />
     </task>
     <task id="LOCAL-00078" summary="Basic routing for documents configured">
       <created>1664126148517</created>
@@ -623,7 +621,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677424927083</updated>
     </task>
-    <option name="localTasksCounter" value="126" />
+    <task id="LOCAL-00126" summary="progress:everything ready">
+      <created>1679907744220</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1679907744221</updated>
+    </task>
+    <option name="localTasksCounter" value="127" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -641,7 +646,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="progress: view based kinds enum compulsory" />
     <MESSAGE value="progress: improve view model concern &amp; test coverage" />
     <MESSAGE value="progress: deliverables filters, views &amp; test coverage" />
     <MESSAGE value="Fix: view kind parser" />
@@ -666,7 +670,8 @@
     <MESSAGE value="progress: layout" />
     <MESSAGE value="progress: button components" />
     <MESSAGE value="progress: esbuild &amp; babel refinements" />
-    <option name="LAST_COMMIT_MESSAGE" value="progress: esbuild &amp; babel refinements" />
+    <MESSAGE value="progress:everything ready" />
+    <option name="LAST_COMMIT_MESSAGE" value="progress:everything ready" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Albert@Development__Albert_Template.rcov" NAME="Development: Albert-Template Coverage Results" MODIFIED="1679066653304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Albert-Template" />

@@ -57,7 +57,7 @@ module Common
 
       def default_html_attributes
         concat_html_attributes(super, {
-          class: "h-full w-full space-y-6 flex flex-col"
+          class: "h-full w-full space-y-6 flex flex-col",
         })
       end
     end
