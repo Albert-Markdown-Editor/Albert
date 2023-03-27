@@ -11,9 +11,7 @@ class ApplicationComponent < ViewComponent::Base
     end
 
     # Default component HTML attributes
-    def default_html_attributes
-      { class: component_class }
-    end
+    def default_html_attributes = { class: component_class }
 
     def concat_html_attributes(old_html_attributes, new_html_attributes)
       old_html_attributes.merge(new_html_attributes) do |_key, oldval, newval|
