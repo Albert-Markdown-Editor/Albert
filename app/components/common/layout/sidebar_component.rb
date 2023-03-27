@@ -33,13 +33,17 @@ module Common
 
       def sidebar_icon_link(icon)
         tag.div(class: "flex items-center justify-center") do
-          icon_component(icon:, size: "lg", html_attributes: { class: "cursor-pointer stroke-gray-400 hover:stroke-gray-800" })
+          icon_component(
+            icon:,
+            size: "lg",
+            html_attributes: { class: "cursor-pointer stroke-gray-400 hover:stroke-gray-800" }
+          )
         end
       end
 
       def default_html_attributes
         concat_html_attributes(super, {
-          class: "w-16 flex flex-col items-center gap-4"
+          class: "w-16 flex flex-col items-center gap-4",
         })
       end
     end
